@@ -1,22 +1,18 @@
 Feature: Block Creation
-  In order to create a layout
-  as a CMS manager
-  I must be able create a block for a layout
 
-  Scenario Outline: Standard Block Attributes
-    * I have entered <name> into the form
-    * I have entered <width> into the form
-    * I have entered <height> into the form
-    * I have entered <paddings> into the form
-    * I have entered <margins> into the form
-    * I have entered <xcord> into the form
-    * I have entered <ycord> into the form
-    * I press the <button>
-    * the result should be <output> on the screen
+  As a CMS manager
+  I want do create blocks
+  So that I can fill layouts with them
 
-  Examples:
-    | name    | width | height | paddings            | margins             | xcord | ycord | button | output  |
-    | Header  | 400px | 200px  | 20px                | 20px                | 0     | 100px | submit | Header  |
-    | Footer  | 300px | 200px  | 10px 5px            | 10px 5px            | 30px  | 200px | submit | Footer  |
-    | Content | 500px | 500px  | 10px 10px 10px 10px | 10px 10px 10px 10px | 40px  | 30px  | submit | Content |
-
+  Scenario: Block Attributes
+    Given I have entered 'Header' into the title input
+    Given I have entered '200px' into the width input
+    Given I have entered '100px' into the height input
+    Given I have entered '0px' into the x-offset input
+    Given I have entered '0px' into the y-offset input
+    When I press the submit button
+    Then I see 'Header' as the title value
+    And I see '200px' as the width value
+    And I see '100px' as the height value
+    And I see '0px' as the x-offset value
+    And I see '0px' as the y-offset value
