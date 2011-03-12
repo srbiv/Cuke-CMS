@@ -9,8 +9,3 @@ Feature: Manager login
     And I have entered 'tacoman420' into the password input
     When I press the submit button
     Then I should see the CMS Management Dashboard
-  
-  
-  
-
-  

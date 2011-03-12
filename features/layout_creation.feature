@@ -5,10 +5,11 @@ Feature: Layout Creation
   So that pages can have structure
 
   Scenario: Layout Attributes
+    Given I have logged into the CMS
     Given I am on the manage layouts page
     And I press the 'Create Layout' button
     And I see the layout create form
-    And I have entered 'Two Column' into the title input
-    And I have entered '600px' into the width input
+    And I have entered 'Home' into the title input
+    And I have entered '1024px' into the width input
     When I press the submit button
-    Then I should see 'Two Column layout added'
+    Then I should see 'Hame layout added'

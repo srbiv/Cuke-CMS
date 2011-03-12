@@ -1,0 +1,20 @@
+body{
+  font-family:"Myriad Pro", Arial;
+}
+#header #nav ul{
+  margin:18px 0 0;
+}
+#header #nav ul li {
+  display:inline-block;
+  margin:12px 0 12px 48px;
+  vertical-align:top;
+}
+#header #nav ul li ul{
+  width:120px;
+  padding:0 0 0 8px;
+}
+#header #nav ul li ul li{
+  display:inline-block;
+  margin:6px 0;
+  width:120px;
+}
