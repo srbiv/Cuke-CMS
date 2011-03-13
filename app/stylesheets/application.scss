@@ -1,9 +1,2 @@
-@import "blueprint/buttons";
-body{
- font-size:14px;
- font-family: helvetica,arial,freesans,clean,sans-serif;
-}
-
-button { @include button-button }
-
+@import "partials/base";
 
