@@ -12,4 +12,8 @@ class ContentTypesController < ApplicationController
       render :new
     end
   end
+
+  def show
+    @content_type = ContentType.find(params[:id])
+  end
 end
