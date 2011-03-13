@@ -1,4 +1,5 @@
-<%= form_tag do -%>
+<h2>New content Type</h2>
+<p>Fill in the values below to create a new content type</p>
+<% form_for @content_type do |f| -%>
   <%= text_field_tag :name %>
-  <%= submit_tag 'submit'%>
 <% end -%>
