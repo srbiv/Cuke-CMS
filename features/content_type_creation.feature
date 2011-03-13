@@ -12,6 +12,6 @@ Feature: Content Type Creation
   @now
   Scenario: Creating content type
     Given I am on the new Content Type page
-    When I fill in "name" with "blog post"
-    And I press "submit"
+    When I fill in "Name" with "blog post"
+    And I press "Create"
     Then I should see "content type blog post created"
