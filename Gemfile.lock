@@ -58,6 +58,8 @@ GEM
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    fancy-buttons (1.0.6)
+      compass (= 0.10.6)
     ffi (0.6.3)
       rake (>= 0.8.7)
     gherkin (2.3.4)
@@ -123,5 +125,6 @@ DEPENDENCIES
   capybara
   compass
   cucumber-rails
+  fancy-buttons
   mongoid (= 2.0.0.rc.6)
   rails (= 3.0.5)

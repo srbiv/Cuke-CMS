@@ -1,5 +1,9 @@
 <h2>Content Types</h2>
 
+<%= link_to new_content_type_path, :class => 'button positive' do %>
+  <%= image_tag '/images/buttons/tick.png' %> New
+<% end %>
+
 <table>
   <% @content_types.each do |content_type| %>
     <tr>
@@ -7,9 +11,13 @@
         <%= link_to content_type.name, content_type %>
       </td>
       <td class="actions">
-        <%= link_to "Edit", edit_content_type_path(content_type) %>
-        <%= link_to "Delete", content_type,
-                  :confirm => "Are you sure?", :method => :delete %>
+        <%= link_to "Edit", edit_content_type_path(content_type), :class => 'button' %>
+        <%= link_to content_type,
+                    { :confirm => "Are you sure?",
+                      :method => :delete,
+                      :class => 'button negative' } do %>
+          <img src="/images/buttons/cross.png" alt=""/> Delete
+        <% end %>
       </td>
     </tr>
   <% end %>

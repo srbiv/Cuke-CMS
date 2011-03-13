@@ -1,2 +1,15 @@
 @import "partials/base";
 
+@import "fancy-buttons";
+
+.button {
+  @include fancy-button(#66F);
+
+  &.positive {
+    @include fancy-button(#6F6);
+  }
+
+  &.negative {
+    @include fancy-button(#F66);
+  }
+}

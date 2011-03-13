@@ -1,5 +1,9 @@
 <%= form_for content_type, :html => {:class => 'bp'} do |f| -%>
   <%= f.label :name %>
   <%= f.text_field :name %>
-  <%= f.submit "Create" %>
+
+  <button type="submit" class="button positive">
+    <img src="/images/buttons/tick.png" alt=""/> Save
+  </button>
+  
 <% end -%>

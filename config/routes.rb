@@ -1,10 +1,13 @@
 CukeCms::Application.routes.draw do
-  # namespace :admin do
+
   resources :content_types do
     resources :contents
   end
+
   resources :contents
-  # end
+
+  root :to => 'content_types#index'
+
   # match '/' => 'content_types#new', :as => :new_content_type_path
 
   # The priority is based upon order of creation:
