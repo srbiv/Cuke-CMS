@@ -1,4 +1,8 @@
 class ContentTypesController < ApplicationController
+  def index
+    @content_types = ContentType.all
+  end
+
   def new
     @content_type = ContentType.new
   end

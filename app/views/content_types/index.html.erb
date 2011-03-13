@@ -1,0 +1,7 @@
+<h2>Listing Content Types</h2>
+
+<ul>
+  <% @content_types.each do |content_type| %>
+    <li><%= link_to content_type.name, content_type %></li>
+  <% end %>
+</ul>
