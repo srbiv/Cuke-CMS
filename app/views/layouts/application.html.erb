@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html>
 <head>
-  <title>CukeCms</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>cukes CMS</title>
+	<link href="/stylesheets/reset.css" type="text/css" rel="stylesheet" media="screen"/>
+	<link href="/stylesheets/grid.css" type="text/css" rel="stylesheet" media="screen"/>
+	<link href="/stylesheets/main.css" type="text/css" rel="stylesheet" media="screen"/>
 </head>
 <body>
 
-<%= yield %>
-
+<div class="row" id="header">
+	<div class="column grid_3" id="logo">
+	  <h1>cukes CMS</h1>
+	  <p>Well behaved content management</p>
+	</div>
+	<div class="column grid_9" id="nav">
+	 <ul>
+	   <li>
+	     Content
+	     <ul>
+	       <li>Create Content</li>
+	       <li>Create Content Types</li>
+	       <li>Manage Lists</li>
+	     </ul>
+	   </li>
+	   <li>
+	     Pages
+	     <ul>
+	       <li>Create Page</li>
+	       <li>Manage Layouts</li>
+	       <li>Manage Blocks</li>
+	     </ul>
+	   </li>
+	   <li>
+	     Users
+	     <ul>
+	       <li>Create User</li>
+	   </li>
+	 </ul>
+	</div>
+</div>
+<div id="content" class="row">
+  <div class='column grid_12'>
+    <%= yield %>
+  </div>
+</div>
 </body>
 </html>
