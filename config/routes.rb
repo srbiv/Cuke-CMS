@@ -1,6 +1,9 @@
 CukeCms::Application.routes.draw do
   # namespace :admin do
-  resources :content_types
+  resources :content_types do
+    resources :contents
+  end
+  resources :contents
   # end
   # match '/' => 'content_types#new', :as => :new_content_type_path
 
