@@ -1,7 +1,7 @@
 <h2>Viewing Content Type: <%= @content_type.name %></h2>
 
 <ul>
-  <li>Content Item 1</li>
-  <li>Content Item 1</li>
-  <li>Content Item 1</li>
+  <%= @content_type.contents.each do |content| %>
+    <li><%= content.title %></li>
+  <% end %>
 </ul>
