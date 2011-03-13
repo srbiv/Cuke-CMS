@@ -10,7 +10,7 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
-    when /the new content_type page/
+    when /the new Content Type page/
       new_content_type_path
 
 

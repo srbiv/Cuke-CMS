@@ -3,7 +3,7 @@ Feature: Content Creation
   As as CMS manager
   I want to create content
   So that I can fill blocks with useful information
-  
+
   Scenario: Navigating to the create content page
     Given I have logged into the CMS
     And I have pressed the 'Add Content' button

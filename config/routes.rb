@@ -1,4 +1,9 @@
 CukeCms::Application.routes.draw do
+  # namespace :admin do
+  resources :content_types
+  # end
+  # match '/' => 'content_types#new', :as => :new_content_type_path
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -9,10 +9,11 @@ Feature: Content Type Creation
     And I have press the 'Create Content Type' button
     And I see the 'Create Content Type' form
 
+  @now
   Scenario: Creating content type
-    Given I am at the Content Creation page
-    And I fill in 'blog post' for name
-    When I click 'submit'
+    Given I am on the new Content Type page
+    When I fill in "name" with "blog post"
+    And I click 'submit'
     Then I should see 'content type blog post created'
   
   
