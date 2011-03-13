@@ -1,4 +1,10 @@
-/* line 3, ../../../app/stylesheets/application.scss */
+/* line 2, ../../../app/stylesheets/application.scss */
+body {
+  font-size: 14px;
+  font-family: helvetica,arial,freesans,clean,sans-serif;
+}
+
+/* line 7, ../../../app/stylesheets/application.scss */
 button {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -18,11 +24,11 @@ button {
   overflow: visible;
   padding: 4px 10px 3px 7px;
 }
-/* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p0@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+/* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 button {
   *display: inline;
 }
-/* line 75, ../../../../../.rvm/gems/ruby-1.9.2-p0@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 75, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 button img {
   margin: 0 3px -3px 0 !important;
   padding: 0;
@@ -31,12 +37,12 @@ button img {
   height: 16px;
   float: none;
 }
-/* line 95, ../../../../../.rvm/gems/ruby-1.9.2-p0@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 95, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 button[type] {
   padding: 4px 10px 4px 7px;
   line-height: 17px;
 }
-/* line 98, ../../../../../.rvm/gems/ruby-1.9.2-p0@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
+/* line 98, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_buttons.scss */
 *:first-child + html button[type] {
   padding: 4px 10px 3px 7px;
 }
