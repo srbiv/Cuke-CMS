@@ -4,6 +4,12 @@ class ContentTypesController < ApplicationController
   end
   
   def create
-    render :text => "content type blog post created"
+    @content_type = ContentType.new(params[:content_type])
+
+    if @content_type.save
+      redirect_to @content_type
+    else
+      render :new
+    end
   end
 end
