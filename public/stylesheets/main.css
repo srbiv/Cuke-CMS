@@ -43,3 +43,6 @@ p{
 #content{
   text-align:left;
 }
+#content p{
+  color:#666;
+}
