@@ -1,7 +1,16 @@
-<h2>Listing Content Types</h2>
+<h2>Content Types</h2>
 
-<ul>
+<table>
   <% @content_types.each do |content_type| %>
-    <li><%= link_to content_type.name, content_type %></li>
+    <tr>
+      <td class="name">
+        <%= link_to content_type.name, content_type %>
+      </td>
+      <td class="actions">
+        <%= link_to "Edit", edit_content_type_path(content_type) %>
+        <%= link_to "Delete", content_type,
+                  :confirm => "Are you sure?", :method => :delete %>
+      </td>
+    </tr>
   <% end %>
-</ul>
+</table>
