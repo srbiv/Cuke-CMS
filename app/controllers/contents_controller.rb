@@ -35,4 +35,11 @@ class ContentsController < ApplicationController
   def show
     @content = Content.find(params[:id])
   end
+
+  def destroy
+    @content = Content.find(params[:id])
+    @content.destroy
+
+    redirect_to contents_path
+  end
 end

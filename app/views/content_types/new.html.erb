@@ -2,8 +2,4 @@
 
 <p>Fill in the values below to create a new content type</p>
 
-<%= form_for @content_type do |f| -%>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.submit "Create" %>
-<% end -%>
+<%= render :partial => 'form', :locals => { :content_type => @content_type } %>
