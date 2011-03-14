@@ -4,7 +4,6 @@
   <title>cukes CMS</title>
 
   <%= stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection' %>
-  <%= stylesheet_link_tag 'compiled/print.css', :media => 'print' %>
   <!-- [if lt IE 8]>
     <%= stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection' %>
   <![endif] -->
@@ -12,51 +11,55 @@
     <%= stylesheet_link_tag 'compiled/ie6.css', :media => 'screen, projection' %>
   <[endif] -->
 
-  <%= stylesheet_link_tag 'compiled/application.css', :media => 'screen, projection' %>
-
   <%= javascript_include_tag :defaults %>
 
   <%= csrf_meta_tag %>
 </head>
-<body class='bp'>
+<body class='admin'>
 
-<div class="row" id="header">
-  <div class="column grid_3" id="logo">
-    <h1>cukes CMS</h1>
-    <p>Well behaved content management</p>
+<div class='container'>
+  <div class="header">
+    <div class="logo">
+      <div class="sitename">cukes CMS</div>
+      <div class="tagline">Well behaved content management</div>
+    </div>
+
+    <div class="nav">
+     <ul>
+       <li>
+         Content
+         <ul>
+           <li>Create Content</li>
+           <li><%= link_to "Manage Content Types", content_types_path %></li>
+           <li>Manage Lists</li>
+         </ul>
+       </li>
+       <li>
+         Pages
+         <ul>
+           <li>Create Page</li>
+           <li>Manage Layouts</li>
+           <li>Manage Blocks</li>
+         </ul>
+       </li>
+       <li>
+         Users
+         <ul>
+           <li>Create User</li>
+         </ul>
+       </li>
+     </ul>
+    </div>
   </div>
 
-  <div class="column grid_9" id="nav">
-   <ul>
-     <li>
-       Content
-       <ul>
-         <li>Create Content</li>
-         <li><%= link_to "Manage Content Types", content_types_path %></li>
-         <li>Manage Lists</li>
-       </ul>
-     </li>
-     <li>
-       Pages
-       <ul>
-         <li>Create Page</li>
-         <li>Manage Layouts</li>
-         <li>Manage Blocks</li>
-       </ul>
-     </li>
-     <li>
-       Users
-       <ul>
-         <li>Create User</li>
-       </ul>
-     </li>
-   </ul>
-  </div>
-</div>
-<div id="content" class="row">
-  <div class='column grid_12'>
+  <div class="content">
     <%= yield %>
   </div>
+
+  <div class="footer">
+    <p class="footnote">I'm in the motherloving footer.</p>
+  </div>
 </div>
+
 </body>
 </html>

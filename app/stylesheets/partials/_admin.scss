@@ -1,0 +1,61 @@
+@import "blueprint/grid";
+@import "blueprint/debug"; // Gives us the 'showgrid' mixin
+
+@import "partials/admin_buttons";
+
+.admin {
+  @include blueprint-grid;
+  font-family:"Myriad Pro", Arial;
+
+  .container {
+    @include showgrid;
+  }
+
+  p {
+    font-size:14px;
+  }
+
+  .header {
+    margin-top:24px;
+    @include column($blueprint-grid-columns);
+
+    .logo {
+      @include column(7);
+
+      .sitename {
+        font-size:28px;
+        text-align:center;
+      }
+
+      .tagline {
+        font-size:11px;
+        color:#999;
+        font-style:italic;
+        text-align:center;
+        margin-top:4px;
+      }
+    }
+
+    .nav {
+      @include column(17);
+      @include last;
+    }
+  }
+
+  .content {
+    @include prepend(2);
+    @include column(18);
+  }
+
+  .footer {
+    @include column($blueprint-grid-columns);
+
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .footnote {
+      font-size: 8px;
+    }
+  }
+}

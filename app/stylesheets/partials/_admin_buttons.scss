@@ -1,15 +1,13 @@
-@import "partials/base";
-
 @import "fancy-buttons";
 
-.button {
+.button { // Normal Buttons
   @include fancy-button(#66F);
 
-  &.positive {
+  &.positive { // Buttons that add something
     @include fancy-button(#6F6);
   }
 
-  &.negative {
+  &.negative { // Buttons that remove something
     @include fancy-button(#F66);
   }
 }
