@@ -1,0 +1,4 @@
+body{
+  @include blueprint-typography(true);
+  @include blueprint-typography-body(16px);
+}

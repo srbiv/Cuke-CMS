@@ -1,8 +1,5 @@
-@import "blueprint/grid";
-@import "blueprint/debug"; // Gives us the 'showgrid' mixin
-
 @import "partials/admin_buttons";
-
+@import "compass/utilities/tables";
 .admin {
   @include blueprint-grid;
   font-family:"Myriad Pro", Arial;
@@ -11,50 +8,101 @@
     @include showgrid;
   }
 
-  p {
-    font-size:14px;
-  }
 
-  .header {
-    margin-top:24px;
+  #header {
+    height:112px;
+    margin-top:16px;
     @include column($blueprint-grid-columns);
 
-    .logo {
-      @include column(7);
+    #logo {
+      @include column(8);
 
-      .sitename {
-        font-size:28px;
+      #sitename {
         text-align:center;
+        margin-bottom:.16em;
       }
 
-      .tagline {
-        font-size:11px;
+      #tagline {
         color:#999;
         font-style:italic;
         text-align:center;
-        margin-top:4px;
       }
     }
 
-    .nav {
-      @include column(17);
+    #nav {
+      @include column(14);
+      @include push(2);
       @include last;
+
+      margin-top:20px;
+
+      ul {
+
+      border:none;
+      margin:0;
+      padding-left:0;
+
+        li {
+
+          @include column(3);
+
+          list-style-position:inside;
+          list-style-type:none;
+          display:inline-block;
+          vertical-align:top;
+          text-align:center;
+
+          ul {
+            padding-left:0;
+
+            li {
+              display:none;
+              text-align:left;
+              font-size:.75em;
+            }
+          }
+        }
+      }
+    }
+  }
+  #sidebar {
+    @include column(8);
+    @include pull(24, true);
+  }
+  #content {
+    @include prepend(8);
+    @include column(18, true);
+    @include last;
+    position:relative;
+
+    h2{
+      @include column(6);
+    
+      display:inline-block;
+    }
+
+    #create_content_type {
+      margin-top:6px;
+      display:inline-block;
+    }
+    table{
+          @include column(16);
+          @include last;
+          @include table-scaffolding;
+          @include outer-table-borders(2, #999999);
+
+          
     }
   }
 
-  .content {
-    @include prepend(2);
-    @include column(18);
-  }
-
-  .footer {
+  #footer {
     @include column($blueprint-grid-columns);
 
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
 
-    .footnote {
+    #footnote {
       font-size: 8px;
     }
   }

@@ -18,13 +18,13 @@
 <body class='admin'>
 
 <div class='container'>
-  <div class="header">
-    <div class="logo">
-      <div class="sitename">cukes CMS</div>
-      <div class="tagline">Well behaved content management</div>
+  <div id="header">
+    <div id="logo">
+      <h1 id="sitename">cukes CMS</h1>
+      <p id="tagline">Well behaved content management</p>
     </div>
 
-    <div class="nav">
+    <div id="nav">
      <ul>
        <li>
          Content
@@ -48,16 +48,19 @@
            <li>Create User</li>
          </ul>
        </li>
+       <li>Settings</li>
      </ul>
     </div>
   </div>
 
-  <div class="content">
+  <div id="content">
     <%= yield %>
   </div>
-
-  <div class="footer">
-    <p class="footnote">I'm in the motherloving footer.</p>
+  <div id="sidebar">
+    &nbsp;
+  </div>
+  <div id="footer">
+    <p id="footnote">I'm in the motherloving footer.</p>
   </div>
 </div>
 

@@ -1,13 +1,13 @@
 @import "fancy-buttons";
 
 .button { // Normal Buttons
-  @include fancy-button(#66F);
+  @include fancy-button(#efefef);
 
   &.positive { // Buttons that add something
-    @include fancy-button(#6F6);
+    @include fancy-button(#efefef);
   }
 
   &.negative { // Buttons that remove something
-    @include fancy-button(#F66);
+    @include fancy-button(#efefef);
   }
 }
