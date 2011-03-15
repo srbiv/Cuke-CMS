@@ -15,7 +15,7 @@
   </thead>
   <tbody>
   <% @content_types.each do |content_type| %>
-    <tr>
+    <tr class="<%= cycle("even", "odd") -%>">
       <td class="name">
         <%= link_to content_type.name, content_type %>
       </td>
