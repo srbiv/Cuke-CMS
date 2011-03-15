@@ -89,8 +89,11 @@
           @include column(15);
           @include last;
           @include table-scaffolding;
+          $table-color: #ffffff;
           @include outer-table-borders(2px, #ccc);
-          @include alternating-rows-and-columns(#ffffff,  #cccccc, transparent, transparent);
+          @include alternating-rows-and-columns(#ffffff,  #cccccc, transparent, #ffffff);
+          
+          border-collapse:collapse;
     }
   }
 

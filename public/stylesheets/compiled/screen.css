@@ -1257,6 +1257,7 @@ body .loud {
   width: 590px;
   margin-right: 0;
   border: 2px solid #cccccc;
+  border-collapse: collapse;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .admin #content table {
@@ -1291,11 +1292,11 @@ body .loud {
 }
 /* line 2, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 .admin #content table th {
-  background-color: transparent;
+  background-color: white;
 }
 /* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 .admin #content table th.even, .admin #content table th:nth-child(2n) {
-  background-color: transparent-transparent;
+  background-color: white-transparent;
 }
 /* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 .admin #content table tr.odd td {
@@ -1321,7 +1322,7 @@ body .loud {
 .admin #content table tfoot th.even, .admin #content table tfoot th:nth-child(2n), .admin #content table tfoot td.even, .admin #content table tfoot td:nth-child(2n) {
   background-color: white-transparent;
 }
-/* line 97, ../../../app/stylesheets/partials/_admin.scss */
+/* line 100, ../../../app/stylesheets/partials/_admin.scss */
 .admin #footer {
   display: inline;
   float: left;
@@ -1335,7 +1336,7 @@ body .loud {
 * html .admin #footer {
   overflow-x: hidden;
 }
-/* line 104, ../../../app/stylesheets/partials/_admin.scss */
+/* line 107, ../../../app/stylesheets/partials/_admin.scss */
 .admin #footer #footnote {
   font-size: 8px;
 }
