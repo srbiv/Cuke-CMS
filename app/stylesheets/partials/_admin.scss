@@ -71,7 +71,7 @@
   }
   #content {
     @include prepend(8);
-    @include column(18, true);
+    @include column(16, true);
     @include last;
     position:relative;
 
@@ -86,12 +86,11 @@
       display:inline-block;
     }
     table{
-          @include column(16);
+          @include column(15);
           @include last;
           @include table-scaffolding;
-          @include outer-table-borders(2, #999999);
-
-          
+          @include outer-table-borders(2px, #ccc);
+          @include alternating-rows-and-columns(#ffffff,  #cccccc, transparent, transparent);
     }
   }
 

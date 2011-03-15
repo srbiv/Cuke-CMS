@@ -1224,7 +1224,7 @@ body .loud {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 710px;
+  width: 630px;
   margin-right: 0;
   position: relative;
 }
@@ -1254,9 +1254,9 @@ body .loud {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 630px;
+  width: 590px;
   margin-right: 0;
-  border: 2 solid #999999;
+  border: 2px solid #cccccc;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .admin #content table {
@@ -1279,17 +1279,49 @@ body .loud {
 }
 /* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
 .admin #content table thead th {
-  border-bottom: 2 solid #999999;
+  border-bottom: 2px solid #cccccc;
 }
 /* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
 .admin #content table tfoot th, .admin #content table tfoot td {
-  border-top: 2 solid #999999;
+  border-top: 2px solid #cccccc;
 }
 /* line 10, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
 .admin #content table th:first-child {
-  border-right: 2 solid #999999;
+  border-right: 2px solid #cccccc;
 }
-/* line 98, ../../../app/stylesheets/partials/_admin.scss */
+/* line 2, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.admin #content table th {
+  background-color: transparent;
+}
+/* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.admin #content table th.even, .admin #content table th:nth-child(2n) {
+  background-color: transparent-transparent;
+}
+/* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.admin #content table tr.odd td {
+  background-color: #cccccc;
+}
+/* line 9, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.admin #content table tr.odd td.even, .admin #content table tr.odd td:nth-child(2n) {
+  background-color: #cccccc-transparent;
+}
+/* line 12, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.admin #content table tr.even td {
+  background-color: white;
+}
+/* line 14, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.admin #content table tr.even td.even, .admin #content table tr.even td:nth-child(2n) {
+  background-color: white-transparent;
+}
+/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.admin #content table tfoot th, .admin #content table tfoot td {
+  background-color: white;
+}
+/* line 19, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.admin #content table tfoot th.even, .admin #content table tfoot th:nth-child(2n), .admin #content table tfoot td.even, .admin #content table tfoot td:nth-child(2n) {
+  background-color: white-transparent;
+}
+/* line 97, ../../../app/stylesheets/partials/_admin.scss */
 .admin #footer {
   display: inline;
   float: left;
@@ -1303,7 +1335,7 @@ body .loud {
 * html .admin #footer {
   overflow-x: hidden;
 }
-/* line 105, ../../../app/stylesheets/partials/_admin.scss */
+/* line 104, ../../../app/stylesheets/partials/_admin.scss */
 .admin #footer #footnote {
   font-size: 8px;
 }
