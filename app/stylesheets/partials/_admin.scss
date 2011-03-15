@@ -1,5 +1,6 @@
 @import "partials/admin_buttons";
 @import "compass/utilities/tables";
+
 .admin {
   @include blueprint-grid;
   font-family:"Myriad Pro", Arial;
@@ -94,6 +95,17 @@
           @include alternating-rows-and-columns(#ffffff,  #cccccc, transparent, #ffffff);
           
           border-collapse:collapse;
+          width:561px;
+          
+          .name {
+            width:420px;
+            padding-right:10px;
+            margin:0;
+            margin-bottom:0;
+          }
+          .actions {
+          }
+
     }
   }
 
