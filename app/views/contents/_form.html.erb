@@ -1,7 +1,7 @@
 <% content_type ||= nil %>
 
 <%= form_for [content_type, content].compact, :html => {:class => 'bp'} do |f| -%>
-  <% unless content_type %>
+  <% if content.new_record? and not content_type %>
     <div>
       <%= f.label :content_type_id %>
       <%= f.collection_select :content_type_id, ContentType.all, :id, :name %>
