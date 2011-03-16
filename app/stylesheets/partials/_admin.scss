@@ -95,6 +95,7 @@ a{
           @include column(15);
           @include last;
           @include table-scaffolding;
+          @include box-shadow;
           $table-color: #ffffff;
           @include outer-table-borders(1px, #ccc);
           @include inner-table-borders(1px, #999);
