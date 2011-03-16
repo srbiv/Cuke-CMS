@@ -1,7 +1,12 @@
-<h2>Viewing Content Type: <%= @content_type.name %></h2>
+<h2>Viewing: <%= @content_type.name.capitalize %></h2>
 
+<div id="create_content">
+  <%= link_to 'Add New Content', new_content_type_content_path(@content_type), :class => 'button positive' %>
+</div>
+
+<h3>Listing Content</h3>
 <ul>
-  <%= @content_type.contents.each do |content| %>
-    <li><%= content.title %></li>
+  <% @content_type.contents.each do |content| %>
+    <li><%= link_to content.title, [@content_type, content] %></li>
   <% end %>
 </ul>

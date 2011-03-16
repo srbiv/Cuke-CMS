@@ -18,7 +18,7 @@
     <% @contents.each do |content| %>
       <tr class="<%= cycle("even", "odd") -%>">
         <td class="title">
-          <%= content.title %>
+          <%= link_to content.title, content %>
         </td>
         <td class="slug">
           <%= content.slug %>
