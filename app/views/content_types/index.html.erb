@@ -21,12 +21,10 @@
       </td>
       <td class="actions">
         <%= link_to "Edit", edit_content_type_path(content_type), :class => 'admin' %>
-        <%= link_to content_type,
+        <%= link_to "Delete", content_type,
                     { :confirm => "Are you sure?",
                       :method => :delete,
-                      :class => 'negitve' } do %>
-          <!-- <img src="/images/buttons/cross.png" alt=""/> --> Delete
-        <% end %>
+                      :class => 'negitve' } %>
       </td>
     </tr>
   <% end %>

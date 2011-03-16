@@ -1,6 +1,39 @@
-<h2>All Contents</h2>
+<h2>All Content</h2>
+<div id="create_content">
+  <%= link_to new_content_path, :class => 'button positive' do %>
+    <!-- <%= image_tag '/images/buttons/tick.png' %>  -->Add New
+  <% end %>
+</div>
 
-<%= link_to 'New', new_content_path %>
-<% @contents.each do |content| %>
-  <%= content.title %>
-<% end %>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Slug</th>
+      <th>Excerpt</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @contents.each do |content| %>
+      <tr class="<%= cycle("even", "odd") -%>">
+        <td class="title">
+          <%= content.title %>
+        </td>
+        <td class="slug">
+          <%= content.slug %>
+        </td>
+        <td class="excerpt">
+          <%= truncate content.body, :length => 20 %>
+        </td>
+        <td class="actions">
+          <%= link_to "Edit", edit_content_path(content), :class => 'admin' %>
+          <%= link_to "Delete", content,
+                      { :confirm => "Are you sure?",
+                        :method => :delete,
+                        :class => 'negitve' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
