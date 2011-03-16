@@ -1,5 +1,9 @@
 @import "partials/admin_buttons";
 @import "compass/utilities/tables";
+@import "compass/utilities/links";
+a{
+  @include link-colors(#00c, #0cc, #c0c, #ccc, #cc0);
+}
 
 .admin {
   @include blueprint-grid;
@@ -80,6 +84,7 @@
       @include column(6);
     
       display:inline-block;
+      color:#999;
     }
 
     #create_content_type {

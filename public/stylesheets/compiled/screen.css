@@ -289,7 +289,7 @@ body .loud {
 
 /* incase an inverted custom gradient isn't specified */
 /* line 177, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class, .button, .button.positive, .button.negative {
+.fancy-button-reset-base-class, .button {
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   background: url('/images/button_bg.png?1300052145') repeat-x bottom left;
   margin: 0;
@@ -302,12 +302,12 @@ body .loud {
   font-weight: bold;
 }
 /* line 165, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class::-moz-focus-inner, .button::-moz-focus-inner, .button.positive::-moz-focus-inner, .button.negative::-moz-focus-inner {
+.fancy-button-reset-base-class::-moz-focus-inner, .button::-moz-focus-inner {
   border: none;
   padding: 0;
 }
 /* line 168, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class:focus, .button:focus, .button.positive:focus, .button.negative:focus {
+.fancy-button-reset-base-class:focus, .button:focus {
   outline: none;
 }
 
@@ -374,134 +374,29 @@ body .loud {
 .button:active, .button:active:visited {
   color: #222222;
 }
-/* line 6, ../../../app/stylesheets/partials/_admin_buttons.scss */
-.button.positive {
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
-  font-size: 18px;
-  line-height: 1.2em;
-  padding: 0.3em 1em;
-  border-width: 1px;
-  background-color: white;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #ffffff), color-stop(50%, #e7e7e7), color-stop(50%, #e0e0e0), color-stop(100%, #f9f9f9));
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #ffffff 10%, #e7e7e7 50%, #e0e0e0 50%, #f9f9f9 100%);
-  background-image: linear-gradient(top, #ffffff 0%, #ffffff 10%, #e7e7e7 50%, #e0e0e0 50%, #f9f9f9 100%);
-  border-color: #c9c9c9;
-  text-shadow: white 0px 1px 1px;
-  -moz-box-shadow: rgba(255, 255, 255, 0.937) 0 0 0.1em 1px inset;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.937) 0 0 0.1em 1px inset;
-  -o-box-shadow: rgba(255, 255, 255, 0.937) 0 0 0.1em 1px inset;
-  box-shadow: rgba(255, 255, 255, 0.937) 0 0 0.1em 1px inset;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding;
-  -o-background-clip: padding-box;
-  -ms-background-clip: padding-box;
-  -khtml-background-clip: padding-box;
-  background-clip: padding-box;
-}
-/* line 120, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button.positive, .button.positive:visited {
-  color: #222222;
-}
-/* line 31, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button.positive:hover, .button.positive:focus {
-  background-color: white;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #ffffff), color-stop(50%, #e0e0e0), color-stop(50%, #d8d8d8), color-stop(100%, #f2f2f2));
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #ffffff 10%, #e0e0e0 50%, #d8d8d8 50%, #f2f2f2 100%);
-  background-image: linear-gradient(top, #ffffff 0%, #ffffff 10%, #e0e0e0 50%, #d8d8d8 50%, #f2f2f2 100%);
-  border-color: #c1c1c1;
-  text-shadow: white 0px 1px 1px;
-}
-/* line 120, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button.positive:hover, .button.positive:hover:visited, .button.positive:focus, .button.positive:focus:visited {
-  color: #222222;
-}
-/* line 36, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button.positive:active {
-  background-color: white;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #e0e0e0), color-stop(30%, #e5e5e5), color-stop(50%, #dbdbdb), color-stop(50%, #d3d3d3), color-stop(100%, #f4f4f4));
-  background-image: -moz-linear-gradient(top, #e0e0e0 0%, #e5e5e5 30%, #dbdbdb 50%, #d3d3d3 50%, #f4f4f4 100%);
-  background-image: linear-gradient(top, #e0e0e0 0%, #e5e5e5 30%, #dbdbdb 50%, #d3d3d3 50%, #f4f4f4 100%);
-  border-color: #b9b9b9;
-  text-shadow: white 0px -1px -1px;
-  -moz-box-shadow: #c9c9c9 0 0.08em 0.1em 1px inset;
-  -webkit-box-shadow: #c9c9c9 0 0.08em 0.1em 1px inset;
-  -o-box-shadow: #c9c9c9 0 0.08em 0.1em 1px inset;
-  box-shadow: #c9c9c9 0 0.08em 0.1em 1px inset;
-}
-/* line 120, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button.positive:active, .button.positive:active:visited {
-  color: #222222;
-}
-/* line 10, ../../../app/stylesheets/partials/_admin_buttons.scss */
-.button.negative {
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
-  font-size: 18px;
-  line-height: 1.2em;
-  padding: 0.3em 1em;
-  border-width: 1px;
-  background-color: white;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #ffffff), color-stop(50%, #e7e7e7), color-stop(50%, #e0e0e0), color-stop(100%, #f9f9f9));
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #ffffff 10%, #e7e7e7 50%, #e0e0e0 50%, #f9f9f9 100%);
-  background-image: linear-gradient(top, #ffffff 0%, #ffffff 10%, #e7e7e7 50%, #e0e0e0 50%, #f9f9f9 100%);
-  border-color: #c9c9c9;
-  text-shadow: white 0px 1px 1px;
-  -moz-box-shadow: rgba(255, 255, 255, 0.937) 0 0 0.1em 1px inset;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.937) 0 0 0.1em 1px inset;
-  -o-box-shadow: rgba(255, 255, 255, 0.937) 0 0 0.1em 1px inset;
-  box-shadow: rgba(255, 255, 255, 0.937) 0 0 0.1em 1px inset;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding;
-  -o-background-clip: padding-box;
-  -ms-background-clip: padding-box;
-  -khtml-background-clip: padding-box;
-  background-clip: padding-box;
-}
-/* line 120, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button.negative, .button.negative:visited {
-  color: #222222;
-}
-/* line 31, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button.negative:hover, .button.negative:focus {
-  background-color: white;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #ffffff), color-stop(50%, #e0e0e0), color-stop(50%, #d8d8d8), color-stop(100%, #f2f2f2));
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #ffffff 10%, #e0e0e0 50%, #d8d8d8 50%, #f2f2f2 100%);
-  background-image: linear-gradient(top, #ffffff 0%, #ffffff 10%, #e0e0e0 50%, #d8d8d8 50%, #f2f2f2 100%);
-  border-color: #c1c1c1;
-  text-shadow: white 0px 1px 1px;
-}
-/* line 120, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button.negative:hover, .button.negative:hover:visited, .button.negative:focus, .button.negative:focus:visited {
-  color: #222222;
-}
-/* line 36, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button.negative:active {
-  background-color: white;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #e0e0e0), color-stop(30%, #e5e5e5), color-stop(50%, #dbdbdb), color-stop(50%, #d3d3d3), color-stop(100%, #f4f4f4));
-  background-image: -moz-linear-gradient(top, #e0e0e0 0%, #e5e5e5 30%, #dbdbdb 50%, #d3d3d3 50%, #f4f4f4 100%);
-  background-image: linear-gradient(top, #e0e0e0 0%, #e5e5e5 30%, #dbdbdb 50%, #d3d3d3 50%, #f4f4f4 100%);
-  border-color: #b9b9b9;
-  text-shadow: white 0px -1px -1px;
-  -moz-box-shadow: #c9c9c9 0 0.08em 0.1em 1px inset;
-  -webkit-box-shadow: #c9c9c9 0 0.08em 0.1em 1px inset;
-  -o-box-shadow: #c9c9c9 0 0.08em 0.1em 1px inset;
-  box-shadow: #c9c9c9 0 0.08em 0.1em 1px inset;
-}
-/* line 120, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button.negative:active, .button.negative:active:visited {
-  color: #222222;
-}
 
 /* line 4, ../../../app/stylesheets/partials/_admin.scss */
+a {
+  color: #0000cc;
+}
+/* line 18, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+a:visited {
+  color: #cccccc;
+}
+/* line 21, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+a:focus {
+  color: #cccc00;
+}
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+a:hover {
+  color: #00cccc;
+}
+/* line 27, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+a:active {
+  color: #cc00cc;
+}
+
+/* line 8, ../../../app/stylesheets/partials/_admin.scss */
 .admin {
   font-family: "Myriad Pro", Arial;
 }
@@ -1115,11 +1010,11 @@ body .loud {
 .admin .append-bottom {
   margin-bottom: 1.5em;
 }
-/* line 8, ../../../app/stylesheets/partials/_admin.scss */
+/* line 12, ../../../app/stylesheets/partials/_admin.scss */
 .admin .container {
   background: url('/images/grid.png?1300033602');
 }
-/* line 13, ../../../app/stylesheets/partials/_admin.scss */
+/* line 17, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header {
   height: 112px;
   margin-top: 16px;
@@ -1132,7 +1027,7 @@ body .loud {
 * html .admin #header {
   overflow-x: hidden;
 }
-/* line 18, ../../../app/stylesheets/partials/_admin.scss */
+/* line 22, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #logo {
   display: inline;
   float: left;
@@ -1143,18 +1038,18 @@ body .loud {
 * html .admin #header #logo {
   overflow-x: hidden;
 }
-/* line 21, ../../../app/stylesheets/partials/_admin.scss */
+/* line 25, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #logo #sitename {
   text-align: center;
   margin-bottom: .16em;
 }
-/* line 26, ../../../app/stylesheets/partials/_admin.scss */
+/* line 30, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #logo #tagline {
   color: #999;
   font-style: italic;
   text-align: center;
 }
-/* line 33, ../../../app/stylesheets/partials/_admin.scss */
+/* line 37, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav {
   display: inline;
   float: left;
@@ -1171,13 +1066,13 @@ body .loud {
 * html .admin #header #nav {
   overflow-x: hidden;
 }
-/* line 40, ../../../app/stylesheets/partials/_admin.scss */
+/* line 44, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul {
   border: none;
   margin: 0;
   padding-left: 0;
 }
-/* line 46, ../../../app/stylesheets/partials/_admin.scss */
+/* line 50, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li {
   display: inline;
   float: left;
@@ -1193,17 +1088,17 @@ body .loud {
 * html .admin #header #nav ul li {
   overflow-x: hidden;
 }
-/* line 56, ../../../app/stylesheets/partials/_admin.scss */
+/* line 60, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul {
   padding-left: 0;
 }
-/* line 59, ../../../app/stylesheets/partials/_admin.scss */
+/* line 63, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul li {
   display: none;
   text-align: left;
   font-size: .75em;
 }
-/* line 69, ../../../app/stylesheets/partials/_admin.scss */
+/* line 73, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar {
   display: inline;
   float: left;
@@ -1218,7 +1113,7 @@ body .loud {
 * html .admin #sidebar {
   overflow-x: hidden;
 }
-/* line 73, ../../../app/stylesheets/partials/_admin.scss */
+/* line 77, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content {
   padding-left: 320px;
   display: inline;
@@ -1232,24 +1127,25 @@ body .loud {
 * html .admin #content {
   overflow-x: hidden;
 }
-/* line 79, ../../../app/stylesheets/partials/_admin.scss */
+/* line 83, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content h2 {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 230px;
   display: inline-block;
+  color: #999;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .admin #content h2 {
   overflow-x: hidden;
 }
-/* line 85, ../../../app/stylesheets/partials/_admin.scss */
+/* line 90, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content #create_content_type {
   margin-top: 6px;
   display: inline-block;
 }
-/* line 89, ../../../app/stylesheets/partials/_admin.scss */
+/* line 94, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table {
   display: inline;
   float: left;
@@ -1323,14 +1219,14 @@ body .loud {
 .admin #content table tfoot th.even, .admin #content table tfoot th:nth-child(2n), .admin #content table tfoot td.even, .admin #content table tfoot td:nth-child(2n) {
   background-color: white-transparent;
 }
-/* line 100, ../../../app/stylesheets/partials/_admin.scss */
+/* line 105, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .name {
   width: 420px;
   padding-right: 10px;
   margin: 0;
   margin-bottom: 0;
 }
-/* line 112, ../../../app/stylesheets/partials/_admin.scss */
+/* line 117, ../../../app/stylesheets/partials/_admin.scss */
 .admin #footer {
   display: inline;
   float: left;
@@ -1344,7 +1240,7 @@ body .loud {
 * html .admin #footer {
   overflow-x: hidden;
 }
-/* line 119, ../../../app/stylesheets/partials/_admin.scss */
+/* line 124, ../../../app/stylesheets/partials/_admin.scss */
 .admin #footer #footnote {
   font-size: 8px;
 }

@@ -3,11 +3,4 @@
 .button { // Normal Buttons
   @include fancy-button(#efefef);
 
-  &.positive { // Buttons that add something
-    @include fancy-button(#efefef);
-  }
-
-  &.negative { // Buttons that remove something
-    @include fancy-button(#efefef);
-  }
 }
