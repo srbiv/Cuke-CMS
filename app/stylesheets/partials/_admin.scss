@@ -96,19 +96,35 @@ a{
           @include last;
           @include table-scaffolding;
           $table-color: #ffffff;
-          @include outer-table-borders(2px, #ccc);
-          @include alternating-rows-and-columns(#ffffff,  #cccccc, transparent, #ffffff);
+          @include outer-table-borders(1px, #ccc);
+          @include inner-table-borders(1px, #999);
+          @include alternating-rows-and-columns(#ffffff,  #efefef, transparent, #ffffff);
           
           border-collapse:collapse;
           width:561px;
           
+          thead th {
+            border-right:none;
+            border-left:none;
+            border-bottom:1px solid #999;
+            color:#666;
+            @include linear-gradient(color-stops(white, #ccc));
+            
+          }
+          thead th:first-child {
+            border-right:none;
+            border-left:none;
+            border-bottom:1px solid #999;
+          }
+          
           .name {
-            width:420px;
+            width:360px;
             padding-right:10px;
             margin:0;
             margin-bottom:0;
           }
           .actions {
+            width:201px;
           }
 
     }
