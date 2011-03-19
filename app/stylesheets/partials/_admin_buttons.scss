@@ -1,6 +1,9 @@
 @import "fancy-buttons";
 
 .button { // Normal Buttons
-  @include fancy-button(#efefef);
-
+  @include fancy-button(#5daa50, 18px, .5em, 1px);
+  
+  &.submit {
+    @include fancy-button(#124c89, 18px, .5em, 1px);
+  }
 }

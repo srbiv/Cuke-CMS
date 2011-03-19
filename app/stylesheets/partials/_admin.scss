@@ -1,6 +1,11 @@
 @import "partials/admin_buttons";
 @import "compass/utilities/tables";
 @import "compass/utilities/links";
+
+body{
+@include linear-gradient(color-stops(white, #cbe2c3));
+min-height:644px;
+}
 a{
   @include link-colors(#00c, #0cc, #c0c, #ccc, #cc0);
 }
@@ -10,7 +15,10 @@ a{
   font-family:"Myriad Pro", Arial;
 
   .container {
-    @include showgrid;
+    //@include showgrid;
+    background-color:#fff;
+    @include box-shadow(#333, 1px, 2px, 2px, 1px);
+    min-height:600px
   }
 
 
@@ -25,10 +33,12 @@ a{
       #sitename {
         text-align:center;
         margin-bottom:.16em;
+        color:#5daa50;
       }
 
       #tagline {
         color:#999;
+        margin-top:-12px;
         font-style:italic;
         text-align:center;
       }
@@ -56,6 +66,7 @@ a{
           display:inline-block;
           vertical-align:top;
           text-align:center;
+          font-size:1.2em;
 
           ul {
             padding-left:0;
@@ -73,6 +84,11 @@ a{
   #sidebar {
     @include column(8);
     @include pull(24, true);
+    
+    h2{
+      margin-left:1em;
+      color:#999;
+    }
   }
   #content {
     @include prepend(8);
@@ -81,25 +97,25 @@ a{
     position:relative;
 
     h2{
-      @include column(6);
+      @include column(7);
     
       display:inline-block;
-      color:#999;
+      color:#666;
     }
 
     #create_content_type {
-      margin-top:6px;
+      margin-top:7px;
       display:inline-block;
     }
     table{
           @include column(15);
           @include last;
           @include table-scaffolding;
-          @include box-shadow;
+          @include box-shadow(#333, 1px, 1px, 1px);
           $table-color: #ffffff;
           @include outer-table-borders(1px, #ccc);
           @include inner-table-borders(1px, #999);
-          @include alternating-rows-and-columns(#ffffff,  #efefef, transparent, #ffffff);
+          @include alternating-rows-and-columns(#ffffff,  #f7f9fa, transparent, #ffffff);
           
           border-collapse:collapse;
           width:561px;
@@ -109,7 +125,8 @@ a{
             border-left:none;
             border-bottom:1px solid #999;
             color:#666;
-            @include linear-gradient(color-stops(white, #ccc));
+            @include linear-gradient(color-stops(white, #eee));
+            font-size:14pxs;
             
           }
           thead th:first-child {
@@ -121,13 +138,37 @@ a{
           .name {
             width:360px;
             padding-right:10px;
-            margin:0;
-            margin-bottom:0;
+            padding: 4px 12px;
+            font-size:18px;
+              a{
+                font-weight:bold;
+                text-decoration: none;
+                color:#333;
+              }
+              a:hover{
+                text-decoration: underline;
+              }
           }
           .actions {
             width:201px;
           }
-
+    }
+    form {
+      @include column(15);
+      @include last;
+      
+      label {
+        display:block;
+      }
+      
+      input {
+        display: block;
+      }
+      
+      .submit{
+        margin-top:24px;
+        margin-left:300px;
+      }
     }
   }
 
