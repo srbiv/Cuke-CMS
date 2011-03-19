@@ -48,26 +48,25 @@ a{
       @include column(14);
       @include push(2);
       @include last;
-
-      margin-top:20px;
-
+      background-color:#5daa50;
+      margin-top:8px;
       ul {
-
-      border:none;
-      margin:0;
-      padding-left:0;
+        border:none;
+        margin:0;
+        padding-left:0;
+        background-color:#5daa50;
 
         li {
-
           @include column(3);
-
           list-style-position:inside;
           list-style-type:none;
           display:inline-block;
           vertical-align:top;
           text-align:center;
           font-size:1.2em;
-
+          color:#fff;
+          background-color:#5daa50;
+          
           ul {
             padding-left:0;
 
