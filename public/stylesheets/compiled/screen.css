@@ -323,16 +323,16 @@ body .loud {
   line-height: 1.2em;
   padding: 0.3em 1em;
   border-width: 1px;
-  background-color: #39dc1e;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #c5e2c1), color-stop(10%, #8cc482), color-stop(50%, #57a04b), color-stop(50%, #529546), color-stop(100%, #69b25c));
-  background-image: -moz-linear-gradient(top, #c5e2c1 0%, #8cc482 10%, #57a04b 50%, #529546 50%, #69b25c 100%);
-  background-image: linear-gradient(top, #c5e2c1 0%, #8cc482 10%, #57a04b 50%, #529546 50%, #69b25c 100%);
-  border-color: #417638;
-  text-shadow: #1c6c0f 0px 1px 1px;
-  -moz-box-shadow: rgba(255, 255, 255, 0.49) 0 0 0.1em 1px inset;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.49) 0 0 0.1em 1px inset;
-  -o-box-shadow: rgba(255, 255, 255, 0.49) 0 0 0.1em 1px inset;
-  box-shadow: rgba(255, 255, 255, 0.49) 0 0 0.1em 1px inset;
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #ffffff), color-stop(50%, #e6e6e6), color-stop(50%, #dfdfdf), color-stop(100%, #f8f8f8));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ffffff 10%, #e6e6e6 50%, #dfdfdf 50%, #f8f8f8 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ffffff 10%, #e6e6e6 50%, #dfdfdf 50%, #f8f8f8 100%);
+  border-color: #c8c8c8;
+  text-shadow: white 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.933) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.933) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.933) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.933) 0 0 0.1em 1px inset;
   -moz-background-clip: padding;
   -webkit-background-clip: padding;
   -o-background-clip: padding-box;
@@ -340,41 +340,53 @@ body .loud {
   -khtml-background-clip: padding-box;
   background-clip: padding-box;
 }
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 120, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .button, .button:visited {
-  color: white;
+  color: #222222;
 }
 /* line 31, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .button:hover, .button:focus {
-  background-color: #36cf1c;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #bcddb6), color-stop(10%, #82bf78), color-stop(50%, #529546), color-stop(50%, #4c8b41), color-stop(100%, #5fad52));
-  background-image: -moz-linear-gradient(top, #bcddb6 0%, #82bf78 10%, #529546 50%, #4c8b41 50%, #5fad52 100%);
-  background-image: linear-gradient(top, #bcddb6 0%, #82bf78 10%, #529546 50%, #4c8b41 50%, #5fad52 100%);
-  border-color: #3b6c33;
-  text-shadow: #195e0d 0px 1px 1px;
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(10%, #ffffff), color-stop(50%, #dfdfdf), color-stop(50%, #d7d7d7), color-stop(100%, #f1f1f1));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #ffffff 10%, #dfdfdf 50%, #d7d7d7 50%, #f1f1f1 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #ffffff 10%, #dfdfdf 50%, #d7d7d7 50%, #f1f1f1 100%);
+  border-color: silver;
+  text-shadow: white 0px 1px 1px;
 }
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 120, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .button:hover, .button:hover:visited, .button:focus, .button:focus:visited {
-  color: white;
+  color: #222222;
 }
 /* line 36, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .button:active {
-  background-color: #32c11a;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #529546), color-stop(30%, #559c49), color-stop(50%, #4e8e43), color-stop(50%, #48843e), color-stop(100%, #62af55));
-  background-image: -moz-linear-gradient(top, #529546 0%, #559c49 30%, #4e8e43 50%, #48843e 50%, #62af55 100%);
-  background-image: linear-gradient(top, #529546 0%, #559c49 30%, #4e8e43 50%, #48843e 50%, #62af55 100%);
-  border-color: #35612e;
-  text-shadow: #15510b 0px -1px -1px;
-  -moz-box-shadow: #417638 0 0.08em 0.1em 1px inset;
-  -webkit-box-shadow: #417638 0 0.08em 0.1em 1px inset;
-  -o-box-shadow: #417638 0 0.08em 0.1em 1px inset;
-  box-shadow: #417638 0 0.08em 0.1em 1px inset;
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #dfdfdf), color-stop(30%, #e4e4e4), color-stop(50%, #dadada), color-stop(50%, #d2d2d2), color-stop(100%, #f3f3f3));
+  background-image: -moz-linear-gradient(top, #dfdfdf 0%, #e4e4e4 30%, #dadada 50%, #d2d2d2 50%, #f3f3f3 100%);
+  background-image: linear-gradient(top, #dfdfdf 0%, #e4e4e4 30%, #dadada 50%, #d2d2d2 50%, #f3f3f3 100%);
+  border-color: #b8b8b8;
+  text-shadow: white 0px -1px -1px;
+  -moz-box-shadow: #c8c8c8 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #c8c8c8 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #c8c8c8 0 0.08em 0.1em 1px inset;
+  box-shadow: #c8c8c8 0 0.08em 0.1em 1px inset;
 }
-/* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+/* line 120, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
 .button:active, .button:active:visited {
-  color: white;
+  color: #222222;
 }
-/* line 6, ../../../app/stylesheets/partials/_admin_buttons.scss */
+/* line 124, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.button, .button:visited {
+  color: #204528;
+}
+/* line 126, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.button:hover, .button:focus {
+  color: #204528;
+}
+/* line 128, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
+.button:active {
+  color: #204528;
+}
+/* line 7, ../../../app/stylesheets/partials/_admin_buttons.scss */
 .button.submit {
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
@@ -438,7 +450,7 @@ body .loud {
   color: white;
 }
 
-/* line 5, ../../../app/stylesheets/partials/_admin.scss */
+/* line 6, ../../../app/stylesheets/partials/_admin.scss */
 body {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #cbe2c3));
   background-image: -moz-linear-gradient(top, #ffffff 0%, #cbe2c3 100%);
@@ -446,7 +458,7 @@ body {
   min-height: 644px;
 }
 
-/* line 9, ../../../app/stylesheets/partials/_admin.scss */
+/* line 10, ../../../app/stylesheets/partials/_admin.scss */
 a {
   color: #0000cc;
 }
@@ -467,7 +479,7 @@ a:active {
   color: #cc00cc;
 }
 
-/* line 13, ../../../app/stylesheets/partials/_admin.scss */
+/* line 14, ../../../app/stylesheets/partials/_admin.scss */
 .admin {
   font-family: "Myriad Pro", Arial;
 }
@@ -1081,7 +1093,7 @@ a:active {
 .admin .append-bottom {
   margin-bottom: 1.5em;
 }
-/* line 17, ../../../app/stylesheets/partials/_admin.scss */
+/* line 18, ../../../app/stylesheets/partials/_admin.scss */
 .admin .container {
   background-color: #fff;
   -moz-box-shadow: #333333 1px 2px 2px 1px;
@@ -1090,7 +1102,7 @@ a:active {
   box-shadow: #333333 1px 2px 2px 1px;
   min-height: 600px;
 }
-/* line 25, ../../../app/stylesheets/partials/_admin.scss */
+/* line 26, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header {
   height: 112px;
   margin-top: 16px;
@@ -1103,56 +1115,55 @@ a:active {
 * html .admin #header {
   overflow-x: hidden;
 }
-/* line 30, ../../../app/stylesheets/partials/_admin.scss */
+/* line 31, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #logo {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 310px;
+  width: 270px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .admin #header #logo {
   overflow-x: hidden;
 }
-/* line 33, ../../../app/stylesheets/partials/_admin.scss */
+/* line 34, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #logo #sitename {
   text-align: center;
   margin-bottom: .16em;
   color: #5daa50;
 }
-/* line 39, ../../../app/stylesheets/partials/_admin.scss */
+/* line 40, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #logo #tagline {
-  color: #999;
+  color: #204528;
   margin-top: -12px;
   font-style: italic;
   text-align: center;
 }
-/* line 47, ../../../app/stylesheets/partials/_admin.scss */
+/* line 48, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 550px;
+  width: 630px;
   display: inline;
   float: right;
   position: relative;
-  margin: 0 -80px 1.5em 80px;
+  margin: 0 -40px 1.5em 40px;
   margin-right: 0;
-  background-color: #5daa50;
   margin-top: 8px;
+  background: transparent url(/images/bg-menu.jpg) repeat-x 0 -10px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .admin #header #nav {
   overflow-x: hidden;
 }
-/* line 53, ../../../app/stylesheets/partials/_admin.scss */
+/* line 54, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul {
   border: none;
   margin: 0;
   padding-left: 0;
-  background-color: #5daa50;
 }
-/* line 59, ../../../app/stylesheets/partials/_admin.scss */
+/* line 58, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li {
   display: inline;
   float: left;
@@ -1162,26 +1173,62 @@ a:active {
   list-style-type: none;
   display: inline-block;
   vertical-align: top;
-  text-align: center;
   font-size: 1.2em;
   color: #fff;
-  background-color: #5daa50;
+  background-color: transparent;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .admin #header #nav ul li {
   overflow-x: hidden;
 }
 /* line 70, ../../../app/stylesheets/partials/_admin.scss */
+.admin #header #nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* line 75, ../../../app/stylesheets/partials/_admin.scss */
+.admin #header #nav ul li a.selected {
+  color: #f7ff00;
+}
+/* line 79, ../../../app/stylesheets/partials/_admin.scss */
+.admin #header #nav ul li a:hover {
+  color: #f7ff00;
+  text-decoration: none;
+}
+/* line 84, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul {
-  padding-left: 0;
-}
-/* line 73, ../../../app/stylesheets/partials/_admin.scss */
-.admin #header #nav ul li ul li {
+  padding: .25em 0 .5em 0;
+  background-color: #204528;
+  border: 1px solid #5daa50;
+  border-top: 0;
+  width: 8em;
+  margin: 0 0 0 -1em;
   display: none;
-  text-align: left;
-  font-size: .75em;
 }
-/* line 83, ../../../app/stylesheets/partials/_admin.scss */
+/* line 93, ../../../app/stylesheets/partials/_admin.scss */
+.admin #header #nav ul li ul li {
+  text-align: left;
+  font-size: .65em;
+  background-color: transparent;
+  display: block;
+  float: none;
+  width: 10em;
+  margin-right: 0;
+  color: white;
+}
+/* line 103, ../../../app/stylesheets/partials/_admin.scss */
+.admin #header #nav ul li ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* line 108, ../../../app/stylesheets/partials/_admin.scss */
+.admin #header #nav ul li ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+/* line 118, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar {
   display: inline;
   float: left;
@@ -1196,12 +1243,12 @@ a:active {
 * html .admin #sidebar {
   overflow-x: hidden;
 }
-/* line 87, ../../../app/stylesheets/partials/_admin.scss */
+/* line 122, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar h2 {
   margin-left: 1em;
   color: #999;
 }
-/* line 92, ../../../app/stylesheets/partials/_admin.scss */
+/* line 127, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content {
   padding-left: 320px;
   display: inline;
@@ -1215,25 +1262,25 @@ a:active {
 * html .admin #content {
   overflow-x: hidden;
 }
-/* line 98, ../../../app/stylesheets/partials/_admin.scss */
+/* line 133, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content h2 {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 270px;
   display: inline-block;
-  color: #666;
+  color: #666666;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .admin #content h2 {
   overflow-x: hidden;
 }
-/* line 105, ../../../app/stylesheets/partials/_admin.scss */
+/* line 139, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content #create_content_type {
   margin-top: 7px;
   display: inline-block;
 }
-/* line 109, ../../../app/stylesheets/partials/_admin.scss */
+/* line 143, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table {
   display: inline;
   float: left;
@@ -1328,7 +1375,7 @@ a:active {
 .admin #content table tfoot th.even, .admin #content table tfoot th:nth-child(2n), .admin #content table tfoot td.even, .admin #content table tfoot td:nth-child(2n) {
   background-color: white-transparent;
 }
-/* line 122, ../../../app/stylesheets/partials/_admin.scss */
+/* line 156, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table thead th {
   border-right: none;
   border-left: none;
@@ -1339,34 +1386,34 @@ a:active {
   background-image: linear-gradient(top, #ffffff 0%, #eeeeee 100%);
   font-size: 14pxs;
 }
-/* line 131, ../../../app/stylesheets/partials/_admin.scss */
+/* line 165, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table thead th:first-child {
   border-right: none;
   border-left: none;
   border-bottom: 1px solid #999;
 }
-/* line 137, ../../../app/stylesheets/partials/_admin.scss */
+/* line 171, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .name {
   width: 360px;
   padding-right: 10px;
   padding: 4px 12px;
   font-size: 18px;
 }
-/* line 142, ../../../app/stylesheets/partials/_admin.scss */
+/* line 176, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .name a {
   font-weight: bold;
   text-decoration: none;
   color: #333;
 }
-/* line 147, ../../../app/stylesheets/partials/_admin.scss */
+/* line 181, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .name a:hover {
   text-decoration: underline;
 }
-/* line 151, ../../../app/stylesheets/partials/_admin.scss */
+/* line 185, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .actions {
   width: 201px;
 }
-/* line 155, ../../../app/stylesheets/partials/_admin.scss */
+/* line 189, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content form {
   display: inline;
   float: left;
@@ -1378,20 +1425,20 @@ a:active {
 * html .admin #content form {
   overflow-x: hidden;
 }
-/* line 159, ../../../app/stylesheets/partials/_admin.scss */
+/* line 193, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content form label {
   display: block;
 }
-/* line 163, ../../../app/stylesheets/partials/_admin.scss */
+/* line 197, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content form input {
   display: block;
 }
-/* line 167, ../../../app/stylesheets/partials/_admin.scss */
+/* line 201, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content form .submit {
   margin-top: 24px;
   margin-left: 300px;
 }
-/* line 174, ../../../app/stylesheets/partials/_admin.scss */
+/* line 208, ../../../app/stylesheets/partials/_admin.scss */
 .admin #footer {
   display: inline;
   float: left;
@@ -1405,7 +1452,7 @@ a:active {
 * html .admin #footer {
   overflow-x: hidden;
 }
-/* line 181, ../../../app/stylesheets/partials/_admin.scss */
+/* line 215, ../../../app/stylesheets/partials/_admin.scss */
 .admin #footer #footnote {
   font-size: 8px;
 }

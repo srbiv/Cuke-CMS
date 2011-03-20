@@ -1,3 +1,4 @@
+@import "partials/colors";
 @import "partials/admin_buttons";
 @import "compass/utilities/tables";
 @import "compass/utilities/links";
@@ -17,7 +18,7 @@ a{
   .container {
     //@include showgrid;
     background-color:#fff;
-    @include box-shadow(#333, 1px, 2px, 2px, 1px);
+    @include box-shadow($dark_grey, 1px, 2px, 2px, 1px);
     min-height:600px
   }
 
@@ -28,7 +29,7 @@ a{
     @include column($blueprint-grid-columns);
 
     #logo {
-      @include column(8);
+      @include column(7);
 
       #sitename {
         text-align:center;
@@ -37,7 +38,7 @@ a{
       }
 
       #tagline {
-        color:#999;
+        color:$dark_green;
         margin-top:-12px;
         font-style:italic;
         text-align:center;
@@ -45,35 +46,69 @@ a{
     }
 
     #nav {
-      @include column(14);
-      @include push(2);
+      @include column(16);
+      @include push(1);
       @include last;
-      background-color:#5daa50;
       margin-top:8px;
+      background:transparent url(/images/bg-menu.jpg) repeat-x 0 -10px;
       ul {
         border:none;
         margin:0;
         padding-left:0;
-        background-color:#5daa50;
-
         li {
           @include column(3);
           list-style-position:inside;
           list-style-type:none;
           display:inline-block;
           vertical-align:top;
-          text-align:center;
           font-size:1.2em;
           color:#fff;
-          background-color:#5daa50;
+          background-color:transparent;
+          margin-left:1em;
+          margin-right:1em;
+          
+          a {
+            color:white;
+            text-decoration:none;
+          }
+          
+          a.selected {
+            color:$yellow;
+          }
+          
+          a:hover {
+            color:$yellow;
+            text-decoration:none;
+          }
           
           ul {
-            padding-left:0;
-
+            padding:.25em 0 .5em 0;
+            background-color:$dark_green;
+            border:1px solid $green;
+            border-top:0;
+            width:8em;
+            margin:0 0 0 -1em;
+            display:none;
+            
             li {
-              display:none;
               text-align:left;
-              font-size:.75em;
+              font-size:.65em;
+              background-color:transparent;
+              display:block;
+              float:none;
+              width:10em;
+              margin-right:0;
+              color:white;
+              
+              a {
+                color:white;
+                text-decoration:none;
+              }
+              
+              a:hover {
+                color:white;
+                text-decoration:underline;
+              }
             }
           }
         }
@@ -97,9 +132,8 @@ a{
 
     h2{
       @include column(7);
-    
       display:inline-block;
-      color:#666;
+      color:$grey;
     }
 
     #create_content_type {
