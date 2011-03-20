@@ -56,11 +56,13 @@ a{
       @include push(1);
       @include last;
       margin-top:41px;
+      
       ul {
         border:none;
         margin:0;
         padding-left:0;
         height:40px;
+        
         li {
           @include column(3);
           list-style-position:inside;
@@ -135,19 +137,21 @@ a{
         @include last;
         margin-left:0;
         margin-bottom:0;
-        color:white;
+        font-weight:normal;
+        color:$dark_green;
         font-size:24px;
         display:block;
-        border:1px solid $green;
+        border:1px solid $grey;
         padding-left:9px;
         width:230px;
-        background-color:$green;
+        padding:4px 0 0 9px;
+        @include linear-gradient(color-stops(white, $light_green));
       }
       
       ul {
         @include column(6);
         @include last;
-        border:1px solid $green;
+        border:1px solid $grey;
         margin:0 0 0 0;
         padding:0 0 0 24px;
         width:215px;
@@ -167,6 +171,7 @@ a{
       display:inline-block;
       color:$grey;
       font-size:24px;
+      padding:5px 0 0 0;
     }
 
     #create_content_type {
@@ -178,9 +183,9 @@ a{
           @include last;
           @include table-scaffolding;
           @include box-shadow(#333, 1px, 1px, 1px);
-          $table-color: #ffffff;
-          @include outer-table-borders(1px, #ccc);
-          @include inner-table-borders(1px, #999);
+          $table-color: white;
+          @include outer-table-borders(1px, $grey);
+          @include inner-table-borders(1px, $grey);
           @include alternating-rows-and-columns(#ffffff,  #f7f9fa, transparent, #ffffff);
           
           border-collapse:collapse;
@@ -189,16 +194,17 @@ a{
           thead th {
             border-right:none;
             border-left:none;
-            border-bottom:1px solid #999;
-            color:#666;
-            @include linear-gradient(color-stops(white, #eee));
-            font-size:14pxs;
-            
+            border-bottom:1px solid $grey;
+            color:$dark-green;
+            @include linear-gradient(color-stops(white, $light_green));
+            font-size:14px;
+            padding:6px 0 0 0;
+            font-weight:normal;
           }
           thead th:first-child {
             border-right:none;
             border-left:none;
-            border-bottom:1px solid #999;
+            border-bottom:1px solid $grey;
           }
           
           .name {
@@ -207,9 +213,9 @@ a{
             padding: 4px 12px;
             font-size:18px;
               a{
-                font-weight:bold;
+                font-weight:normal;
                 text-decoration: none;
-                color:#333;
+                color:$dark-green;
               }
               a:hover{
                 text-decoration: underline;
