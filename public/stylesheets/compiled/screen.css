@@ -1162,8 +1162,9 @@ a:active {
   border: none;
   margin: 0;
   padding-left: 0;
+  height: 30px;
 }
-/* line 58, ../../../app/stylesheets/partials/_admin.scss */
+/* line 59, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li {
   display: inline;
   float: left;
@@ -1183,21 +1184,21 @@ a:active {
 * html .admin #header #nav ul li {
   overflow-x: hidden;
 }
-/* line 70, ../../../app/stylesheets/partials/_admin.scss */
+/* line 71, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li a {
   color: white;
   text-decoration: none;
 }
-/* line 75, ../../../app/stylesheets/partials/_admin.scss */
+/* line 76, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li a.selected {
   color: #f7ff00;
 }
-/* line 79, ../../../app/stylesheets/partials/_admin.scss */
+/* line 80, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li a:hover {
   color: #f7ff00;
   text-decoration: none;
 }
-/* line 84, ../../../app/stylesheets/partials/_admin.scss */
+/* line 85, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul {
   padding: .25em 0 .5em 0;
   background-color: #204528;
@@ -1207,7 +1208,7 @@ a:active {
   margin: 0 0 0 -1em;
   display: none;
 }
-/* line 93, ../../../app/stylesheets/partials/_admin.scss */
+/* line 94, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul li {
   text-align: left;
   font-size: .65em;
@@ -1218,17 +1219,17 @@ a:active {
   margin-right: 0;
   color: white;
 }
-/* line 103, ../../../app/stylesheets/partials/_admin.scss */
+/* line 104, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul li a {
   color: white;
   text-decoration: none;
 }
-/* line 108, ../../../app/stylesheets/partials/_admin.scss */
+/* line 109, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul li a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 118, ../../../app/stylesheets/partials/_admin.scss */
+/* line 119, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar {
   display: inline;
   float: left;
@@ -1243,12 +1244,12 @@ a:active {
 * html .admin #sidebar {
   overflow-x: hidden;
 }
-/* line 122, ../../../app/stylesheets/partials/_admin.scss */
+/* line 123, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar h2 {
   margin-left: 1em;
   color: #999;
 }
-/* line 127, ../../../app/stylesheets/partials/_admin.scss */
+/* line 128, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content {
   padding-left: 320px;
   display: inline;
@@ -1262,7 +1263,7 @@ a:active {
 * html .admin #content {
   overflow-x: hidden;
 }
-/* line 133, ../../../app/stylesheets/partials/_admin.scss */
+/* line 134, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content h2 {
   display: inline;
   float: left;
@@ -1275,12 +1276,12 @@ a:active {
 * html .admin #content h2 {
   overflow-x: hidden;
 }
-/* line 139, ../../../app/stylesheets/partials/_admin.scss */
+/* line 140, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content #create_content_type {
   margin-top: 7px;
   display: inline-block;
 }
-/* line 143, ../../../app/stylesheets/partials/_admin.scss */
+/* line 144, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table {
   display: inline;
   float: left;
@@ -1375,7 +1376,7 @@ a:active {
 .admin #content table tfoot th.even, .admin #content table tfoot th:nth-child(2n), .admin #content table tfoot td.even, .admin #content table tfoot td:nth-child(2n) {
   background-color: white-transparent;
 }
-/* line 156, ../../../app/stylesheets/partials/_admin.scss */
+/* line 157, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table thead th {
   border-right: none;
   border-left: none;
@@ -1386,34 +1387,34 @@ a:active {
   background-image: linear-gradient(top, #ffffff 0%, #eeeeee 100%);
   font-size: 14pxs;
 }
-/* line 165, ../../../app/stylesheets/partials/_admin.scss */
+/* line 166, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table thead th:first-child {
   border-right: none;
   border-left: none;
   border-bottom: 1px solid #999;
 }
-/* line 171, ../../../app/stylesheets/partials/_admin.scss */
+/* line 172, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .name {
   width: 360px;
   padding-right: 10px;
   padding: 4px 12px;
   font-size: 18px;
 }
-/* line 176, ../../../app/stylesheets/partials/_admin.scss */
+/* line 177, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .name a {
   font-weight: bold;
   text-decoration: none;
   color: #333;
 }
-/* line 181, ../../../app/stylesheets/partials/_admin.scss */
+/* line 182, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .name a:hover {
   text-decoration: underline;
 }
-/* line 185, ../../../app/stylesheets/partials/_admin.scss */
+/* line 186, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .actions {
   width: 201px;
 }
-/* line 189, ../../../app/stylesheets/partials/_admin.scss */
+/* line 190, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content form {
   display: inline;
   float: left;
@@ -1425,20 +1426,20 @@ a:active {
 * html .admin #content form {
   overflow-x: hidden;
 }
-/* line 193, ../../../app/stylesheets/partials/_admin.scss */
+/* line 194, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content form label {
   display: block;
 }
-/* line 197, ../../../app/stylesheets/partials/_admin.scss */
+/* line 198, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content form input {
   display: block;
 }
-/* line 201, ../../../app/stylesheets/partials/_admin.scss */
+/* line 202, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content form .submit {
   margin-top: 24px;
   margin-left: 300px;
 }
-/* line 208, ../../../app/stylesheets/partials/_admin.scss */
+/* line 209, ../../../app/stylesheets/partials/_admin.scss */
 .admin #footer {
   display: inline;
   float: left;
@@ -1452,7 +1453,7 @@ a:active {
 * html .admin #footer {
   overflow-x: hidden;
 }
-/* line 215, ../../../app/stylesheets/partials/_admin.scss */
+/* line 216, ../../../app/stylesheets/partials/_admin.scss */
 .admin #footer #footnote {
   font-size: 8px;
 }

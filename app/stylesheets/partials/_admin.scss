@@ -55,6 +55,7 @@ a{
         border:none;
         margin:0;
         padding-left:0;
+        height:30px;
         li {
           @include column(3);
           list-style-position:inside;
