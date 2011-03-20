@@ -24,17 +24,19 @@ a{
 
 
   #header {
-    height:66px;
+    height:76px;
     margin-top:0;
     margin-bottom:48px;
     border-bottom: 3px solid $dark_green;
-    background:transparent url(/images/bg-header.jpg) repeat-x;
     @include column($blueprint-grid-columns);
+    @include linear-gradient(color-stops(white, $light-green));
+    
 
     #logo {
       @include column(7);
 
       #sitename {
+        margin-top:12px;
         text-align:center;
         margin-bottom:.16em;
         color:#5daa50;
@@ -53,7 +55,7 @@ a{
       @include column(16);
       @include push(1);
       @include last;
-      margin-top:29px;
+      margin-top:41px;
       ul {
         border:none;
         margin:0;
