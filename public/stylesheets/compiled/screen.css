@@ -319,7 +319,7 @@ body .loud {
   -ms-border-radius: 0.5em;
   -khtml-border-radius: 0.5em;
   border-radius: 0.5em;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.2em;
   padding: 0.3em 1em;
   border-width: 1px;
@@ -1104,8 +1104,11 @@ a:active {
 }
 /* line 26, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header {
-  height: 112px;
-  margin-top: 16px;
+  height: 66px;
+  margin-top: 0;
+  margin-bottom: 48px;
+  border-bottom: 3px solid #204528;
+  background: transparent url(/images/bg-header.jpg) repeat-x;
   display: inline;
   float: left;
   margin-right: 10px;
@@ -1115,7 +1118,7 @@ a:active {
 * html .admin #header {
   overflow-x: hidden;
 }
-/* line 31, ../../../app/stylesheets/partials/_admin.scss */
+/* line 34, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #logo {
   display: inline;
   float: left;
@@ -1126,20 +1129,21 @@ a:active {
 * html .admin #header #logo {
   overflow-x: hidden;
 }
-/* line 34, ../../../app/stylesheets/partials/_admin.scss */
+/* line 37, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #logo #sitename {
   text-align: center;
   margin-bottom: .16em;
   color: #5daa50;
 }
-/* line 40, ../../../app/stylesheets/partials/_admin.scss */
+/* line 43, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #logo #tagline {
   color: #204528;
   margin-top: -12px;
   font-style: italic;
   text-align: center;
+  font-size: .9em;
 }
-/* line 48, ../../../app/stylesheets/partials/_admin.scss */
+/* line 52, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav {
   display: inline;
   float: left;
@@ -1150,21 +1154,20 @@ a:active {
   position: relative;
   margin: 0 -40px 1.5em 40px;
   margin-right: 0;
-  margin-top: 8px;
-  background: transparent url(/images/bg-menu.jpg) repeat-x 0 -10px;
+  margin-top: 29px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .admin #header #nav {
   overflow-x: hidden;
 }
-/* line 54, ../../../app/stylesheets/partials/_admin.scss */
+/* line 57, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul {
   border: none;
   margin: 0;
   padding-left: 0;
-  height: 30px;
+  height: 40px;
 }
-/* line 59, ../../../app/stylesheets/partials/_admin.scss */
+/* line 62, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li {
   display: inline;
   float: left;
@@ -1173,9 +1176,9 @@ a:active {
   list-style-position: inside;
   list-style-type: none;
   display: inline-block;
-  vertical-align: top;
   font-size: 1.2em;
-  color: #fff;
+  margin-top: .4em;
+  color: #5daa50;
   background-color: transparent;
   margin-left: 1em;
   margin-right: 1em;
@@ -1184,31 +1187,29 @@ a:active {
 * html .admin #header #nav ul li {
   overflow-x: hidden;
 }
-/* line 71, ../../../app/stylesheets/partials/_admin.scss */
+/* line 74, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li a {
-  color: white;
+  color: #5daa50;
   text-decoration: none;
 }
-/* line 76, ../../../app/stylesheets/partials/_admin.scss */
+/* line 79, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li a.selected {
-  color: #f7ff00;
+  color: #204528;
 }
-/* line 80, ../../../app/stylesheets/partials/_admin.scss */
+/* line 83, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li a:hover {
-  color: #f7ff00;
+  color: #204528;
   text-decoration: none;
 }
-/* line 85, ../../../app/stylesheets/partials/_admin.scss */
+/* line 88, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul {
   padding: .25em 0 .5em 0;
   background-color: #204528;
-  border: 1px solid #5daa50;
-  border-top: 0;
   width: 8em;
-  margin: 0 0 0 -1em;
+  margin: 1px 0 0 -1em;
   display: none;
 }
-/* line 94, ../../../app/stylesheets/partials/_admin.scss */
+/* line 95, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul li {
   text-align: left;
   font-size: .65em;
@@ -1219,37 +1220,88 @@ a:active {
   margin-right: 0;
   color: white;
 }
-/* line 104, ../../../app/stylesheets/partials/_admin.scss */
+/* line 105, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul li a {
   color: white;
   text-decoration: none;
 }
-/* line 109, ../../../app/stylesheets/partials/_admin.scss */
+/* line 110, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul li a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 119, ../../../app/stylesheets/partials/_admin.scss */
+/* line 120, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 310px;
+  width: 230px;
   display: inline;
   float: left;
   position: relative;
   margin-left: -950px;
+  -moz-box-shadow: #333333 1px 1px 1px 0;
+  -webkit-box-shadow: #333333 1px 1px 1px 0;
+  -o-box-shadow: #333333 1px 1px 1px 0;
+  box-shadow: #333333 1px 1px 1px 0;
+  width: 240px;
+  margin-left: -930px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .admin #sidebar {
   overflow-x: hidden;
 }
-/* line 123, ../../../app/stylesheets/partials/_admin.scss */
-.admin #sidebar h2 {
-  margin-left: 1em;
-  color: #999;
+/* line 127, ../../../app/stylesheets/partials/_admin.scss */
+.admin #sidebar #sub_nav {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+  margin-right: 0;
 }
-/* line 128, ../../../app/stylesheets/partials/_admin.scss */
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .admin #sidebar #sub_nav {
+  overflow-x: hidden;
+}
+/* line 131, ../../../app/stylesheets/partials/_admin.scss */
+.admin #sidebar #sub_nav h2 {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  color: white;
+  font-size: 24px;
+  display: block;
+  border: 1px solid #5daa50;
+  padding-left: 9px;
+  width: 230px;
+  background-color: #5daa50;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .admin #sidebar #sub_nav h2 {
+  overflow-x: hidden;
+}
+/* line 145, ../../../app/stylesheets/partials/_admin.scss */
+.admin #sidebar #sub_nav ul {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+  margin-right: 0;
+  border: 1px solid #5daa50;
+  margin: 0 0 0 0;
+  padding: 0 0 0 24px;
+  width: 215px;
+  border-top: 0;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .admin #sidebar #sub_nav ul {
+  overflow-x: hidden;
+}
+/* line 157, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content {
   padding-left: 320px;
   display: inline;
@@ -1263,7 +1315,7 @@ a:active {
 * html .admin #content {
   overflow-x: hidden;
 }
-/* line 134, ../../../app/stylesheets/partials/_admin.scss */
+/* line 163, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content h2 {
   display: inline;
   float: left;
@@ -1271,17 +1323,18 @@ a:active {
   width: 270px;
   display: inline-block;
   color: #666666;
+  font-size: 24px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .admin #content h2 {
   overflow-x: hidden;
 }
-/* line 140, ../../../app/stylesheets/partials/_admin.scss */
+/* line 170, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content #create_content_type {
   margin-top: 7px;
   display: inline-block;
 }
-/* line 144, ../../../app/stylesheets/partials/_admin.scss */
+/* line 174, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table {
   display: inline;
   float: left;
@@ -1376,7 +1429,7 @@ a:active {
 .admin #content table tfoot th.even, .admin #content table tfoot th:nth-child(2n), .admin #content table tfoot td.even, .admin #content table tfoot td:nth-child(2n) {
   background-color: white-transparent;
 }
-/* line 157, ../../../app/stylesheets/partials/_admin.scss */
+/* line 187, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table thead th {
   border-right: none;
   border-left: none;
@@ -1387,34 +1440,34 @@ a:active {
   background-image: linear-gradient(top, #ffffff 0%, #eeeeee 100%);
   font-size: 14pxs;
 }
-/* line 166, ../../../app/stylesheets/partials/_admin.scss */
+/* line 196, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table thead th:first-child {
   border-right: none;
   border-left: none;
   border-bottom: 1px solid #999;
 }
-/* line 172, ../../../app/stylesheets/partials/_admin.scss */
+/* line 202, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .name {
   width: 360px;
   padding-right: 10px;
   padding: 4px 12px;
   font-size: 18px;
 }
-/* line 177, ../../../app/stylesheets/partials/_admin.scss */
+/* line 207, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .name a {
   font-weight: bold;
   text-decoration: none;
   color: #333;
 }
-/* line 182, ../../../app/stylesheets/partials/_admin.scss */
+/* line 212, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .name a:hover {
   text-decoration: underline;
 }
-/* line 186, ../../../app/stylesheets/partials/_admin.scss */
+/* line 216, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table .actions {
   width: 201px;
 }
-/* line 190, ../../../app/stylesheets/partials/_admin.scss */
+/* line 220, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content form {
   display: inline;
   float: left;
@@ -1426,20 +1479,20 @@ a:active {
 * html .admin #content form {
   overflow-x: hidden;
 }
-/* line 194, ../../../app/stylesheets/partials/_admin.scss */
+/* line 224, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content form label {
   display: block;
 }
-/* line 198, ../../../app/stylesheets/partials/_admin.scss */
+/* line 228, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content form input {
   display: block;
 }
-/* line 202, ../../../app/stylesheets/partials/_admin.scss */
+/* line 232, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content form .submit {
   margin-top: 24px;
   margin-left: 300px;
 }
-/* line 209, ../../../app/stylesheets/partials/_admin.scss */
+/* line 239, ../../../app/stylesheets/partials/_admin.scss */
 .admin #footer {
   display: inline;
   float: left;
@@ -1453,7 +1506,7 @@ a:active {
 * html .admin #footer {
   overflow-x: hidden;
 }
-/* line 216, ../../../app/stylesheets/partials/_admin.scss */
+/* line 246, ../../../app/stylesheets/partials/_admin.scss */
 .admin #footer #footnote {
   font-size: 8px;
 }
