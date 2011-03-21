@@ -25,31 +25,7 @@
     </div>
 
     <div id="nav">
-     <ul>
-       <li>
-         <%= link_to "Content", content_types_path %>
-         <ul>
-           <li><%= link_to "Manage Content", content_types_path %></li>
-           <li><%= link_to "Manage Content Types", content_types_path %></li>
-           <li>Manage Lists</li>
-         </ul>
-       </li>
-       <li>
-         Pages
-         <ul>
-           <li>Create Page</li>
-           <li>Manage Layouts</li>
-           <li>Manage Blocks</li>
-         </ul>
-       </li>
-       <li>
-         Users
-         <ul>
-           <li>Create User</li>
-         </ul>
-       </li>
-       <li>Settings</li>
-     </ul>
+      <%= render_navigation :expand_all => true %>
     </div>
   </div>
 
@@ -57,13 +33,13 @@
     <%= yield %>
   </div>
   <div id="sidebar">
+    <div id="breadcrumbs">
+      <%= render_navigation :renderer => :breadcrumbs, :join_with => " &gt; " %>
+    </div>
+
     <div id="sub_nav">
-      <h2>Content</h2>
-      <ul>
-        <li><%= link_to "Manage Content", content_types_path %></li>
-        <li><%= link_to "Manage Content Types", content_types_path %></li>
-        <li>Manage Lists</li>
-      </ul>
+      <h2><%= active_navigation_item_name :level => 1 %></h2>
+      <%= render_navigation :level => 2 %>
     </div>
   </div>
   <div id="footer">
