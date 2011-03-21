@@ -450,29 +450,29 @@ body .loud {
   color: white;
 }
 
-/* line 6, ../../../app/stylesheets/partials/_admin.scss */
+/* line 7, ../../../app/stylesheets/partials/_admin.scss */
 body {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
   background-image: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
   background-image: linear-gradient(top, #ffffff 0%, #eeeeee 100%);
   min-height: 644px;
 }
-/* line 9, ../../../app/stylesheets/partials/_admin.scss */
+/* line 10, ../../../app/stylesheets/partials/_admin.scss */
 body a, body a:visited {
   color: #333;
   text-decoration: none;
 }
-/* line 13, ../../../app/stylesheets/partials/_admin.scss */
+/* line 14, ../../../app/stylesheets/partials/_admin.scss */
 body a:hover {
   color: #204528;
   text-decoration: underline !important;
 }
-/* line 17, ../../../app/stylesheets/partials/_admin.scss */
+/* line 18, ../../../app/stylesheets/partials/_admin.scss */
 body a.selected {
   color: #204528;
 }
 
-/* line 22, ../../../app/stylesheets/partials/_admin.scss */
+/* line 23, ../../../app/stylesheets/partials/_admin.scss */
 .admin {
   font-family: "Myriad Pro", Arial;
 }
@@ -1086,7 +1086,7 @@ body a.selected {
 .admin .append-bottom {
   margin-bottom: 1.5em;
 }
-/* line 26, ../../../app/stylesheets/partials/_admin.scss */
+/* line 27, ../../../app/stylesheets/partials/_admin.scss */
 .admin .container {
   background-color: #fff;
   -moz-box-shadow: #333333 1px 2px 2px 1px;
@@ -1096,7 +1096,7 @@ body a.selected {
   min-height: 600px;
   position: relative;
 }
-/* line 35, ../../../app/stylesheets/partials/_admin.scss */
+/* line 36, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header {
   height: 76px;
   margin-top: 0;
@@ -1114,7 +1114,7 @@ body a.selected {
 * html .admin #header {
   overflow-x: hidden;
 }
-/* line 44, ../../../app/stylesheets/partials/_admin.scss */
+/* line 45, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #logo {
   display: inline;
   float: left;
@@ -1125,14 +1125,14 @@ body a.selected {
 * html .admin #header #logo {
   overflow-x: hidden;
 }
-/* line 47, ../../../app/stylesheets/partials/_admin.scss */
+/* line 48, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #logo #sitename {
   margin-top: 12px;
   text-align: center;
   margin-bottom: .16em;
   color: #5daa50;
 }
-/* line 54, ../../../app/stylesheets/partials/_admin.scss */
+/* line 55, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #logo #tagline {
   color: #204528;
   margin-top: -12px;
@@ -1140,7 +1140,7 @@ body a.selected {
   text-align: center;
   font-size: .9em;
 }
-/* line 63, ../../../app/stylesheets/partials/_admin.scss */
+/* line 64, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav {
   display: inline;
   float: left;
@@ -1157,14 +1157,14 @@ body a.selected {
 * html .admin #header #nav {
   overflow-x: hidden;
 }
-/* line 69, ../../../app/stylesheets/partials/_admin.scss */
+/* line 70, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul {
   border: none;
   margin: 0;
   padding-left: 0;
   height: 40px;
 }
-/* line 75, ../../../app/stylesheets/partials/_admin.scss */
+/* line 76, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li {
   display: inline;
   float: left;
@@ -1184,21 +1184,21 @@ body a.selected {
 * html .admin #header #nav ul li {
   overflow-x: hidden;
 }
-/* line 87, ../../../app/stylesheets/partials/_admin.scss */
+/* line 88, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li a {
   color: #5daa50;
   text-decoration: none;
 }
-/* line 92, ../../../app/stylesheets/partials/_admin.scss */
+/* line 93, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li a.selected {
   color: #204528;
 }
-/* line 96, ../../../app/stylesheets/partials/_admin.scss */
+/* line 97, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li a:hover {
   color: #204528;
   text-decoration: none;
 }
-/* line 101, ../../../app/stylesheets/partials/_admin.scss */
+/* line 102, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul {
   padding: .25em 0 .5em 0;
   background-color: #204528;
@@ -1206,7 +1206,7 @@ body a.selected {
   margin: 1px 0 0 -1em;
   display: none;
 }
-/* line 108, ../../../app/stylesheets/partials/_admin.scss */
+/* line 109, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul li {
   text-align: left;
   font-size: .65em;
@@ -1217,17 +1217,17 @@ body a.selected {
   margin-right: 0;
   color: white;
 }
-/* line 118, ../../../app/stylesheets/partials/_admin.scss */
+/* line 119, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul li a {
   color: white;
   text-decoration: none;
 }
-/* line 123, ../../../app/stylesheets/partials/_admin.scss */
+/* line 124, ../../../app/stylesheets/partials/_admin.scss */
 .admin #header #nav ul li ul li a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 133, ../../../app/stylesheets/partials/_admin.scss */
+/* line 134, ../../../app/stylesheets/partials/_admin.scss */
 .admin #breadcrumbs {
   display: inline;
   float: left;
@@ -1246,7 +1246,7 @@ body a.selected {
 * html .admin #breadcrumbs {
   overflow-x: hidden;
 }
-/* line 145, ../../../app/stylesheets/partials/_admin.scss */
+/* line 146, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar {
   display: inline;
   float: left;
@@ -1273,7 +1273,7 @@ body a.selected {
 * html .admin #sidebar {
   overflow-x: hidden;
 }
-/* line 153, ../../../app/stylesheets/partials/_admin.scss */
+/* line 154, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar #sub_nav {
   display: inline;
   float: left;
@@ -1285,7 +1285,7 @@ body a.selected {
 * html .admin #sidebar #sub_nav {
   overflow-x: hidden;
 }
-/* line 157, ../../../app/stylesheets/partials/_admin.scss */
+/* line 158, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar #sub_nav h2 {
   display: inline;
   float: left;
@@ -1305,12 +1305,18 @@ body a.selected {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #cbe2c3));
   background-image: -moz-linear-gradient(top, #ffffff 0%, #cbe2c3 100%);
   background-image: linear-gradient(top, #ffffff 0%, #cbe2c3 100%);
+  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
 }
 /* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .admin #sidebar #sub_nav h2 {
   overflow-x: hidden;
 }
-/* line 174, ../../../app/stylesheets/partials/_admin.scss */
+/* line 175, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar #sub_nav ul {
   display: inline;
   float: left;
@@ -1327,7 +1333,7 @@ body a.selected {
 * html .admin #sidebar #sub_nav ul {
   overflow-x: hidden;
 }
-/* line 183, ../../../app/stylesheets/partials/_admin.scss */
+/* line 184, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar #sub_nav ul li {
   border-bottom: 1px solid #cccccc;
   list-style-type: none;
@@ -1336,15 +1342,15 @@ body a.selected {
   padding-top: 8px;
   height: 26px;
 }
-/* line 190, ../../../app/stylesheets/partials/_admin.scss */
+/* line 191, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar #sub_nav ul li a {
   text-decoration: none;
 }
-/* line 195, ../../../app/stylesheets/partials/_admin.scss */
+/* line 196, ../../../app/stylesheets/partials/_admin.scss */
 .admin #sidebar #sub_nav ul li:last-child {
   border-bottom: none;
 }
-/* line 202, ../../../app/stylesheets/partials/_admin.scss */
+/* line 203, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content {
   padding-left: 320px;
   display: inline;
@@ -1358,7 +1364,7 @@ body a.selected {
 * html .admin #content {
   overflow-x: hidden;
 }
-/* line 208, ../../../app/stylesheets/partials/_admin.scss */
+/* line 209, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content h2 {
   display: inline;
   float: left;
@@ -1373,12 +1379,12 @@ body a.selected {
 * html .admin #content h2 {
   overflow-x: hidden;
 }
-/* line 216, ../../../app/stylesheets/partials/_admin.scss */
+/* line 217, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content #create_content_type {
   margin-top: 9px;
   display: inline-block;
 }
-/* line 220, ../../../app/stylesheets/partials/_admin.scss */
+/* line 221, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content table {
   display: inline;
   float: left;
@@ -1390,6 +1396,12 @@ body a.selected {
   -o-box-shadow: #333333 1px 1px 1px 0;
   box-shadow: #333333 1px 1px 1px 0;
   border: 1px solid #666666;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
   border-collapse: collapse;
   width: 561px;
 }

@@ -13,3 +13,7 @@ Run `rake cucumber` to make sure everything is working.
 ## Create More Features
 
 Create more .feature files in the features/ directory. Read features/content_types.feature for an example.
+
+## Icons
+
+Silk Icons by http://www.famfamfam.com/lab/icons/silk/

@@ -1,5 +1,6 @@
 @import "partials/rounded";
 @import "partials/colors";
+@import "partials/rounded";
 @import "partials/admin_buttons";
 @import "compass/utilities/tables";
 
@@ -168,7 +169,7 @@ min-height:644px;
         width:229px;
         padding:4px 0 0 9px;
         @include linear-gradient(color-stops(white, $light_color));
-        
+        @include border-radius-top(5px);
       }
       
       ul {
@@ -225,17 +226,16 @@ min-height:644px;
           $table-color: white;
           @include outer-table-borders(1px, $grey);
           @include inner-table-borders(1px, $grey);
-          @include alternating-rows-and-columns(#ffffff,  #f7f9fa, transparent, #ffffff);
-          
+          @include border-radius-top(4px);
+          @include alternating-rows-and-columns(#ffffff,  #f7f9fa, transparent, #ffffff);          
           border-collapse:collapse;
           width:561px;
-          
           thead th {
             border-right:none;
             border-left:none;
             border-bottom:1px solid $grey;
             color:$dark_color;
-            @include linear-gradient(color-stops(white, $light_color));
+            @include linear-gradient(color-stops(white, $light_color));            
             font-size:14px;
             padding:6px 0 0 0;
             font-weight:normal;
