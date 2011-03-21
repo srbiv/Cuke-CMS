@@ -4,8 +4,8 @@
 @import "compass/utilities/links";
 
 body{
-@include linear-gradient(color-stops(white, $light-green));
-min-height:644px;
+/*@include linear-gradient(color-stops(white, $light-green));
+*/min-height:644px;
 }
 a{
   @include link-colors(#00c, #0cc, #c0c, #ccc, #cc0);
@@ -169,13 +169,13 @@ a{
     h2{
       @include column(7);
       display:inline-block;
-      color:$grey;
+      color:$dark-green;
       font-size:24px;
       padding:5px 0 0 0;
     }
 
     #create_content_type {
-      margin-top:7px;
+      margin-top:9px;
       display:inline-block;
     }
     table{

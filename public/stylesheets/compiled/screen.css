@@ -319,7 +319,7 @@ body .loud {
   -ms-border-radius: 0.5em;
   -khtml-border-radius: 0.5em;
   border-radius: 0.5em;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2em;
   padding: 0.3em 1em;
   border-width: 1px;
@@ -452,9 +452,8 @@ body .loud {
 
 /* line 6, ../../../app/stylesheets/partials/_admin.scss */
 body {
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #cbe2c3));
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #cbe2c3 100%);
-  background-image: linear-gradient(top, #ffffff 0%, #cbe2c3 100%);
+  /*@include linear-gradient(color-stops(white, $light-green));
+  */
   min-height: 644px;
 }
 
@@ -1329,7 +1328,7 @@ a:active {
   margin-right: 10px;
   width: 270px;
   display: inline-block;
-  color: #666666;
+  color: #204528;
   font-size: 24px;
   padding: 5px 0 0 0;
 }
@@ -1339,7 +1338,7 @@ a:active {
 }
 /* line 177, ../../../app/stylesheets/partials/_admin.scss */
 .admin #content #create_content_type {
-  margin-top: 7px;
+  margin-top: 9px;
   display: inline-block;
 }
 /* line 181, ../../../app/stylesheets/partials/_admin.scss */
