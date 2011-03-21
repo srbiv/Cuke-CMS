@@ -2,7 +2,7 @@
 
 .button { // Normal Buttons
   @include fancy-button(#eee, 14px, .5em, 1px);
-  @include fancy-button-text-colors($dark_green);
+  @include fancy-button-text-colors($dark_color);
   
   &.submit {
     @include fancy-button(#124c89, 18px, .5em, 1px);

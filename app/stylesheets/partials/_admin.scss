@@ -1,14 +1,21 @@
 @import "partials/colors";
 @import "partials/admin_buttons";
 @import "compass/utilities/tables";
-@import "compass/utilities/links";
 
 body{
-/*@include linear-gradient(color-stops(white, $light-green));
-*/min-height:644px;
-}
-a{
-  @include link-colors(#00c, #0cc, #c0c, #ccc, #cc0);
+@include linear-gradient(color-stops(white, #eee));
+min-height:644px;
+ a,a:visited {
+   color:#333;
+   text-decoration:none;
+ }
+ a:hover{
+   color:$dark_color;
+   text-decoration:underline !important;
+ }
+ a.selected{
+   color:$dark_color;
+ }
 }
 
 .admin {
@@ -19,7 +26,8 @@ a{
     //@include showgrid;
     background-color:#fff;
     @include box-shadow($dark_grey, 1px, 2px, 2px, 1px);
-    min-height:600px
+    min-height:600px;
+    position:relative;
   }
 
 
@@ -27,9 +35,9 @@ a{
     height:76px;
     margin-top:0;
     margin-bottom:48px;
-    border-bottom: 3px solid $dark_green;
+    border-bottom: 3px solid $dark_color;
     @include column($blueprint-grid-columns);
-    @include linear-gradient(color-stops(white, $light-green));
+    @include linear-gradient(color-stops(white, $light_color));
     
 
     #logo {
@@ -43,7 +51,7 @@ a{
       }
 
       #tagline {
-        color:$dark_green;
+        color:$dark_color;
         margin-top:-12px;
         font-style:italic;
         text-align:center;
@@ -70,28 +78,28 @@ a{
           display:inline-block;
           font-size:1.2em;
           margin-top:.4em;
-          color:$green;
+          color:$color;
           background-color:transparent;
           margin-left:1em;
           margin-right:1em;
           
           a {
-            color:$green;
+            color:$color;
             text-decoration:none;
           }
           
           a.selected {
-            color:$dark_green;
+            color:$dark_color;
           }
           
           a:hover {
-            color:$dark_green;
+            color:$dark_color;
             text-decoration:none;
           }
           
           ul {
             padding:.25em 0 .5em 0;
-            background-color:$dark_green;
+            background-color:$dark_color;
             width:8em;
             margin:1px 0 0 -1em;
             display:none;
@@ -121,6 +129,18 @@ a{
       }
     }
   }
+  #breadcrumbs{
+    @include column(24);
+    @include last;
+    
+    position:absolute;
+    top:92px;
+    left:24px;
+    margin:0;
+    padding:0;
+    height:24px;
+    font-size:14px;
+  }
   #sidebar {
     @include column(6);
     @include pull(24, true);
@@ -138,14 +158,14 @@ a{
         margin-left:0;
         margin-bottom:0;
         font-weight:normal;
-        color:$dark_green;
+        color:$dark_color;
         font-size:24px;
         display:block;
         border:1px solid $grey;
         padding-left:9px;
-        width:230px;
+        width:229px;
         padding:4px 0 0 9px;
-        @include linear-gradient(color-stops(white, $light_green));
+        @include linear-gradient(color-stops(white, $light_color));
       }
       
       ul {
@@ -153,9 +173,25 @@ a{
         @include last;
         border:1px solid $grey;
         margin:0 0 0 0;
-        padding:0 0 0 24px;
-        width:215px;
+        padding:0 0 0 0;
+        width:238px;
         border-top:0;
+        
+          li {
+            border-bottom:1px solid $light_grey;
+            list-style-type:none;
+            margin-left:0;
+            padding-left:12px;
+            padding-top:8px;
+            height:26px;
+            a {
+              text-decoration:none;
+            }
+          }
+          
+          li:last-child {
+            border-bottom:none;
+          }
       }
       
     }
@@ -169,7 +205,7 @@ a{
     h2{
       @include column(7);
       display:inline-block;
-      color:$dark-green;
+      color:$dark_color;
       font-size:24px;
       padding:5px 0 0 0;
     }
@@ -195,8 +231,8 @@ a{
             border-right:none;
             border-left:none;
             border-bottom:1px solid $grey;
-            color:$dark-green;
-            @include linear-gradient(color-stops(white, $light_green));
+            color:$dark_color;
+            @include linear-gradient(color-stops(white, $light_color));
             font-size:14px;
             padding:6px 0 0 0;
             font-weight:normal;
@@ -212,14 +248,6 @@ a{
             padding-right:10px;
             padding: 4px 12px;
             font-size:18px;
-              a{
-                font-weight:normal;
-                text-decoration: none;
-                color:$dark-green;
-              }
-              a:hover{
-                text-decoration: underline;
-              }
           }
           .actions {
             width:201px;
@@ -256,3 +284,5 @@ a{
     }
   }
 }
+
+
