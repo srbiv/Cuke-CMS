@@ -6,6 +6,7 @@ gem "bson_ext", "~> 1.2"
 
 gem 'compass'
 gem 'fancy-buttons'
+gem 'simple-navigation'
 
 group :test do
   gem 'capybara'
