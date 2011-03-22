@@ -148,16 +148,18 @@ min-height:644px;
     @include column(6);
     @include pull(24, true);
     @include box-shadow(#333, 1px, 1px, 1px);
+    @include round-top-corners(6px);
     width:240px;
     margin-left:-930px;
 
     #sub_nav {
       @include column(6);
-      @include last;      
+      @include last;  
       
       h2{
         @include column(6);
         @include last;
+        @include round-top-corners(6px);
         margin-left:0;
         margin-bottom:0;
         font-weight:normal;
@@ -169,7 +171,6 @@ min-height:644px;
         width:229px;
         padding:4px 0 0 9px;
         @include linear-gradient(color-stops(white, $light_color));
-        @include border-radius-top(5px);
       }
       
       ul {
@@ -229,9 +230,8 @@ min-height:644px;
         @include box-shadow(#333, 1px, 1px, 1px);
         @include outer-table-borders(1px, $grey);
         @include inner-table-borders(1px, $grey);
-        @include border-radius-top(4px);
-        @include alternating-rows-and-columns(#ffffff,  #f7f9fa, transparent, #ffffff); 
-                
+        @include alternating-rows-and-columns(#ffffff,  #f7f9fa, transparent, #ffffff);
+        @include round-top-corners(6px);
         border-collapse:collapse;
         thead th {
           border-right:none;
@@ -247,8 +247,12 @@ min-height:644px;
           border-right:none;
           border-left:none;
           border-bottom:1px solid $grey;
+          @include round-corner('top-left',6px);
         }
-
+        
+        thead th:last-child {
+          @include round-corner('top-right', 6px);
+        }
         .name {
           padding-right:10px;
           padding: 4px 12px 2px;
