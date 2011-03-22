@@ -2,6 +2,7 @@
 @import "partials/colors";
 @import "partials/rounded";
 @import "partials/admin_buttons";
+@import "partials/admin_icons";
 @import "compass/utilities/tables";
 
 body{
@@ -218,43 +219,48 @@ min-height:644px;
       margin-top:9px;
       display:inline-block;
     }
-    table{
-          @include column(15);
-          @include last;
-          @include table-scaffolding;
-          @include box-shadow(#333, 1px, 1px, 1px);
-          $table-color: white;
-          @include outer-table-borders(1px, $grey);
-          @include inner-table-borders(1px, $grey);
-          @include border-radius-top(4px);
-          @include alternating-rows-and-columns(#ffffff,  #f7f9fa, transparent, #ffffff);          
-          border-collapse:collapse;
-          width:561px;
-          thead th {
-            border-right:none;
-            border-left:none;
-            border-bottom:1px solid $grey;
-            color:$dark_color;
-            @include linear-gradient(color-stops(white, $light_color));            
-            font-size:14px;
-            padding:6px 0 0 0;
-            font-weight:normal;
-          }
-          thead th:first-child {
-            border-right:none;
-            border-left:none;
-            border-bottom:1px solid $grey;
-          }
+    
+    .index_table {
+      @include column(15);
+      @include last;
+      
+      table{
+        $table-color: white;
+        @include table-scaffolding;
+        @include box-shadow(#333, 1px, 1px, 1px);
+        @include outer-table-borders(1px, $grey);
+        @include inner-table-borders(1px, $grey);
+        @include border-radius-top(4px);
+        @include alternating-rows-and-columns(#ffffff,  #f7f9fa, transparent, #ffffff); 
+                
+        border-collapse:collapse;
+        thead th {
+          border-right:none;
+          border-left:none;
+          border-bottom:1px solid $grey;
+          color:$dark_color;
+          @include linear-gradient(color-stops(white, $light_color));            
+          font-size:14px;
+          padding:6px 0 0 0;
+          font-weight:normal;
+        }
+        thead th:first-child {
+          border-right:none;
+          border-left:none;
+          border-bottom:1px solid $grey;
+        }
+
+        .name {
+          padding-right:10px;
+          padding: 4px 12px 2px;
+          font-size:18px;
+        }
+        .actions {
+          padding-top:8px;
+          text-align:center;
+        }
+      }
           
-          .name {
-            width:360px;
-            padding-right:10px;
-            padding: 4px 12px;
-            font-size:18px;
-          }
-          .actions {
-            width:201px;
-          }
     }
     form {
       @include column(15);

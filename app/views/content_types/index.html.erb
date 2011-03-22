@@ -5,28 +5,29 @@
   <% end %>
 </div>
 
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-  <% @content_types.each do |content_type| %>
-    <tr class="<%= cycle("even", "odd") -%>">
-      <td class="name">
-        <%= link_to content_type.name, content_type %>
-      </td>
-      <td class="actions">
-        <%= link_to "Edit", edit_content_type_path(content_type), :class => 'admin' %>
-        <%= link_to "Delete", content_type,
-                    { :confirm => "Are you sure?",
-                      :method => :delete,
-                      :class => 'negitve' } %>
-      </td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
+<div class="index_table">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @content_types.each do |content_type| %>
+      <tr class="<%= cycle("even", "odd") -%>">
+        <td class="name">
+          <%= link_to content_type.name, content_type %>
+        </td>
+        <td class="actions">
+          <%= link_to "Edit", edit_content_type_path(content_type), :class => 'admin icon edit' %>
+          <%= link_to "Delete", content_type,
+                      { :confirm => "Are you sure?",
+                        :method => :delete,
+                        :class => 'icon delete' } %>
+        </td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

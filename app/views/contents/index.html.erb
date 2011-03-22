@@ -4,13 +4,12 @@
     <!-- <%= image_tag '/images/buttons/tick.png' %>  -->Add New
   <% end %>
 </div>
-
+<div class="index_table">
 <table>
   <thead>
     <tr>
       <th>Title</th>
       <th>Slug</th>
-      <th>Excerpt</th>
       <th>Actions</th>
     </tr>
   </thead>
@@ -23,17 +22,15 @@
         <td class="slug">
           <%= content.slug %>
         </td>
-        <td class="excerpt">
-          <%= truncate content.body, :length => 20 %>
-        </td>
         <td class="actions">
-          <%= link_to "Edit", edit_content_path(content), :class => 'admin' %>
+          <%= link_to "Edit", edit_content_path(content), :class => 'icon edit' %>
           <%= link_to "Delete", content,
                       { :confirm => "Are you sure?",
                         :method => :delete,
-                        :class => 'negitve' } %>
+                        :class => 'icon delete' } %>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
+</div>
