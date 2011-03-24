@@ -5,134 +5,127 @@
 @import "partials/admin_icons";
 @import "compass/utilities/tables";
 
-body{
-@include linear-gradient(color-stops(white, #eee));
-min-height:644px;
- a,a:visited {
-   color:#333;
-   text-decoration:none;
- }
- a:hover{
-   color:$dark_color;
-   text-decoration:underline !important;
- }
- a.selected{
-   color:$dark_color;
- }
-}
-
-.admin {
+body.admin {
   @include blueprint-grid;
-  font-family:"Myriad Pro", Arial;
-
+  
+  background: #fff url(/images/bg-body.png) repeat-x;
+  width:100%;
+  min-height:644px;
+  
+  
+  a,a:visited {
+    color:#333;
+    text-decoration:none;
+  }
+  
+  a:hover{
+    color:$dark_color;
+    text-decoration:underline !important;
+  }
+  a.selected{
+    color:$dark_color;
+  }
   .container {
-    //@include showgrid;
-    background-color:#fff;
-    @include box-shadow($dark_grey, 1px, 2px, 2px, 1px);
+
     min-height:600px;
     position:relative;
   }
 
-
   #header {
-    height:76px;
+    height:4em;
     margin-top:0;
-    margin-bottom:48px;
-    border-bottom: 3px solid $dark_color;
-    @include column($blueprint-grid-columns);
-    @include linear-gradient(color-stops(white, $light_color));
-    
+    @include column($blueprint-grid-columns - 1);
+    @include prepend(1);
+    @include last;
+  }
 
     #logo {
       @include column(7);
 
-      #sitename {
-        margin-top:12px;
-        text-align:center;
-        margin-bottom:.16em;
-        color:#5daa50;
+      h1 {
+        background: transparent url(/images/logo.png) no-repeat;
+        text-indent:-99999px;
+        height:70px;
+        width:300px;
+        display:inline-block;
+        margin-top:16px;
       }
-
-      #tagline {
-        color:$dark_color;
-        margin-top:-12px;
-        font-style:italic;
-        text-align:center;
-        font-size:.9em;
+      p {
+        display:none;
       }
     }
 
-    #nav {
-      @include column(16);
-      @include push(1);
-      @include last;
-      margin-top:41px;
-      
-      ul {
-        border:none;
-        margin:0;
-        padding-left:0;
-        height:40px;
-        
-        li {
-          @include column(3);
-          list-style-position:inside;
-          list-style-type:none;
-          display:inline-block;
-          font-size:1.2em;
-          margin-top:.4em;
-          color:$color;
-          background-color:transparent;
-          margin-left:1em;
-          margin-right:1em;
-          
-          a {
-            color:$color;
-            text-decoration:none;
-          }
-          
-          a.selected {
-            color:$dark_color;
-          }
-          
-          a:hover {
-            color:$dark_color;
-            text-decoration:none;
-          }
-          
-          ul {
-            padding:.25em 0 .5em 0;
-            background-color:$dark_color;
-            width:8em;
-            margin:1px 0 0 -1em;
-            display:none;
-            
-            li {
-              text-align:left;
-              font-size:.65em;
-              background-color:transparent;
-              display:block;
-              float:none;
-              width:10em;
-              margin-right:0;
-              color:white;
-              
-              a {
-                color:white;
-                text-decoration:none;
-              }
-              
-              a:hover {
-                color:white;
-                text-decoration:underline;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  #breadcrumbs{
+ /*   #nav {
+       @include column(16);
+       @include push(1);
+       @include last;
+       margin-top:41px;
+       
+       ul {
+         border:none;
+         margin:0;
+         padding-left:0;
+         height:40px;
+         
+         li {
+           @include column(3);
+           list-style-position:inside;
+           list-style-type:none;
+           display:inline-block;
+           font-size:1.2em;
+           margin-top:.4em;
+           color:$color;
+           background-color:transparent;
+           margin-left:1em;
+           margin-right:1em;
+           
+           a {
+             color:$color;
+             text-decoration:none;
+           }
+           
+           a.selected {
+             color:$dark_color;
+           }
+           
+           a:hover {
+             color:$dark_color;
+             text-decoration:none;
+           }
+           
+           ul {
+             padding:.25em 0 .5em 0;
+             background-color:$dark_color;
+             width:8em;
+             margin:1px 0 0 -1em;
+             display:none;
+             
+             li {
+               text-align:left;
+               font-size:.65em;
+               background-color:transparent;
+               display:block;
+               float:none;
+               width:10em;
+               margin-right:0;
+               color:white;
+               
+               a {
+                 color:white;
+                 text-decoration:none;
+               }
+               
+               a:hover {
+                 color:white;
+                 text-decoration:underline;
+               }
+             }
+           }
+         }
+       }
+     }
+   }*/
+/*  #breadcrumbs{
     @include column(24);
     @include last;
     
@@ -143,8 +136,8 @@ min-height:644px;
     padding:0;
     height:24px;
     font-size:14px;
-  }
-  #sidebar {
+  }*/
+/*  #sidebar {
     @include column(6);
     @include pull(24, true);
     @include box-shadow(#333, 1px, 1px, 1px);
@@ -200,6 +193,12 @@ min-height:644px;
       }
       
     }
+  }*/
+  #main {
+    @include column($blueprint-grid-columns);
+    @include last;
+    
+    background:transparent url(/images/bg-content.png) no-repeat;
   }
   #content {
     @include prepend(8);
@@ -247,11 +246,11 @@ min-height:644px;
           border-right:none;
           border-left:none;
           border-bottom:1px solid $grey;
-          @include round-corner('top-left',6px);
+          @include round-corner("top-left",6px);
         }
         
         thead th:last-child {
-          @include round-corner('top-right', 6px);
+          @include round-corner("top-right", 6px);
         }
         .name {
           padding-right:10px;

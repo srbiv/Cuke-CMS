@@ -28,10 +28,10 @@
       <%= render_navigation :expand_all => true %>
     </div>
   </div>
-  <div id="content">
+  <div id="main">
     <%= yield %>
   </div>
-  <div id="breadcrumbs">
+  <!-- <div id="breadcrumbs">
     <%= render_navigation :renderer => :breadcrumbs, :join_with => " &gt; " %>
   </div>
   <div id="sidebar">
@@ -40,7 +40,7 @@
       <h2><%= active_navigation_item_name :level => 1 %></h2>
       <%= render_navigation :level => 2 %>
     </div>
-  </div>
+  </div> -->
   <div id="footer">
   </div>
 </div>
