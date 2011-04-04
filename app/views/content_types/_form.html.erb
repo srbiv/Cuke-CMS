@@ -1,8 +1,9 @@
 <%= form_for content_type, :html => {:class => 'bp'} do |f| -%>
-  <fieldset>
+  <div>
     <%= f.label :name %>
     <%= f.text_field :name %>
-  </fieldset>
-
-  <button type="submit" class="button submit">Save</button>
+  </div>
+  <button type="submit" class="button positive">
+    <img src="/images/buttons/tick.png" alt=""/> Save
+  </button>
 <% end -%>

@@ -4,43 +4,44 @@
 @import "partials/admin_buttons";
 @import "partials/admin_icons";
 @import "compass/utilities/tables";
+@import "partials/_admin_mixes";
+@import "partials/_form";
+
 
 body.admin {
   @include blueprint-grid;
   
-  background: #fff url(/images/bg-body.png) repeat-x;
+  background: white url(/images/bg-body.png) repeat-x;
   width:100%;
   min-height:644px;
   
-  
   a,a:visited {
-    color:#333;
+    color:$dark_grey;
     text-decoration:none;
   }
   
   a:hover{
     color:$dark_color;
-    text-decoration:underline !important;
+    text-decoration:underline  !important;
   }
   a.selected{
     color:$dark_color;
+    text-decoration:underline !important;
   }
   .container {
 
     min-height:600px;
     position:relative;
+    overflow:visible;
   }
 
   #header {
+    @include full_width();
     height:4em;
     margin-top:0;
-    @include column($blueprint-grid-columns - 1);
-    @include prepend(1);
-    @include last;
-  }
 
     #logo {
-      @include column(7);
+      @include column($blueprint-grid-columns/3);
 
       h1 {
         background: transparent url(/images/logo.png) no-repeat;
@@ -48,252 +49,144 @@ body.admin {
         height:70px;
         width:300px;
         display:inline-block;
-        margin-top:16px;
+        margin-top:10px;
+        color:$grey;
       }
       p {
         display:none;
       }
     }
-
- /*   #nav {
-       @include column(16);
-       @include push(1);
-       @include last;
-       margin-top:41px;
-       
-       ul {
-         border:none;
-         margin:0;
-         padding-left:0;
-         height:40px;
-         
-         li {
-           @include column(3);
-           list-style-position:inside;
-           list-style-type:none;
-           display:inline-block;
-           font-size:1.2em;
-           margin-top:.4em;
-           color:$color;
-           background-color:transparent;
-           margin-left:1em;
-           margin-right:1em;
-           
-           a {
-             color:$color;
-             text-decoration:none;
-           }
-           
-           a.selected {
-             color:$dark_color;
-           }
-           
-           a:hover {
-             color:$dark_color;
-             text-decoration:none;
-           }
-           
-           ul {
-             padding:.25em 0 .5em 0;
-             background-color:$dark_color;
-             width:8em;
-             margin:1px 0 0 -1em;
-             display:none;
-             
-             li {
-               text-align:left;
-               font-size:.65em;
-               background-color:transparent;
-               display:block;
-               float:none;
-               width:10em;
-               margin-right:0;
-               color:white;
-               
-               a {
-                 color:white;
-                 text-decoration:none;
-               }
-               
-               a:hover {
-                 color:white;
-                 text-decoration:underline;
-               }
-             }
-           }
-         }
-       }
-     }
-   }*/
-/*  #breadcrumbs{
-    @include column(24);
-    @include last;
     
-    position:absolute;
-    top:92px;
-    left:24px;
-    margin:0;
-    padding:0;
-    height:24px;
-    font-size:14px;
-  }*/
-/*  #sidebar {
-    @include column(6);
-    @include pull(24, true);
-    @include box-shadow(#333, 1px, 1px, 1px);
-    @include round-top-corners(6px);
-    width:240px;
-    margin-left:-930px;
-
-    #sub_nav {
-      @include column(6);
-      @include last;  
+    #nav {
+      @include column($blueprint-grid-columns/2 + 2);
+      margin:0;
+      padding:0;
+      position:relative;
       
-      h2{
-        @include column(6);
-        @include last;
-        @include round-top-corners(6px);
-        margin-left:0;
-        margin-bottom:0;
-        font-weight:normal;
-        color:$dark_color;
-        font-size:24px;
-        display:block;
-        border:1px solid $grey;
-        padding-left:9px;
-        width:229px;
-        padding:4px 0 0 9px;
-        @include linear-gradient(color-stops(white, $light_color));
-      }
-      
-      ul {
-        @include column(6);
-        @include last;
-        border:1px solid $grey;
-        margin:0 0 0 0;
-        padding:0 0 0 0;
-        width:238px;
-        border-top:0;
+      li {
+        display:inline-block;
+        margin:1.5em 1.5em 0;
         
+        a {
+          @include round-corners(4px);
+          font-size:1.1em;
+          padding:.25em .75em;
+          border-width: 1px;
+          border-style: solid;
+          border-color:transparent;
+        }
+        a.selected,
+        a.hover,
+        a:hover {
+          text-decoration:none !important;
+          background-color:white;
+          padding:.25em .75em;
+          border-color: #CCCCCC #EEEEEE #EEEEEE #CCCCCC;
+          border-style: solid;
+          border-width: 1px;
+        }
+        ul {
+          display:none;
+          position:absolute;
+          top:2em;
+          left:0;
+          width:100%;
+          
           li {
-            border-bottom:1px solid $light_grey;
-            list-style-type:none;
-            margin-left:0;
-            padding-left:12px;
-            padding-top:8px;
-            height:26px;
             a {
-              text-decoration:none;
+              font-size:.9em;
+              padding:0;
+              background-color:transparent;
+              color:$dark_color;
+            }
+            a.hover,
+            a:hover {
+              text-decoration:none !important;
+              background-color:transparent;
+              padding:0;
             }
           }
-          
-          li:last-child {
-            border-bottom:none;
-          }
-      }
-      
-    }
-  }*/
-  #main {
-    @include column($blueprint-grid-columns);
-    @include last;
-    
-    background:transparent url(/images/bg-content.png) no-repeat;
-  }
-  #content {
-    @include prepend(8);
-    @include column(16, true);
-    @include last;
-    position:relative;
-
-    h2{
-      @include column(7);
-      display:inline-block;
-      color:$dark_color;
-      font-size:24px;
-      padding:5px 0 0 0;
-    }
-
-    #create_content_type {
-      margin-top:9px;
-      display:inline-block;
-    }
-    
-    .index_table {
-      @include column(15);
-      @include last;
-      
-      table{
-        $table-color: white;
-        @include table-scaffolding;
-        @include box-shadow(#333, 1px, 1px, 1px);
-        @include outer-table-borders(1px, $grey);
-        @include inner-table-borders(1px, $grey);
-        @include alternating-rows-and-columns(#ffffff,  #f7f9fa, transparent, #ffffff);
-        @include round-top-corners(6px);
-        border-collapse:collapse;
-        thead th {
-          border-right:none;
-          border-left:none;
-          border-bottom:1px solid $grey;
-          color:$dark_color;
-          @include linear-gradient(color-stops(white, $light_color));            
-          font-size:14px;
-          padding:6px 0 0 0;
-          font-weight:normal;
-        }
-        thead th:first-child {
-          border-right:none;
-          border-left:none;
-          border-bottom:1px solid $grey;
-          @include round-corner("top-left",6px);
         }
         
-        thead th:last-child {
-          @include round-corner("top-right", 6px);
-        }
-        .name {
-          padding-right:10px;
-          padding: 4px 12px 2px;
-          font-size:18px;
-        }
-        .actions {
-          padding-top:8px;
-          text-align:center;
-        }
-      }
-          
-    }
-    form {
-      @include column(15);
-      @include last;
-      
-      label {
-        display:block;
-      }
-      
-      input {
-        display: block;
-      }
-      
-      .submit{
-        margin-top:24px;
-        margin-left:300px;
       }
     }
   }
-
-  #footer {
-    @include column($blueprint-grid-columns);
-
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    #footnote {
-      font-size: 8px;
+  #header.long {
+    height:7em;
+  }
+  
+ 
+  #main {
+    @include full_width();
+    @include box-shadow($light-grey, 2px, 2px, 10px);
+    background-color:white;
+    border: 1px solid $grey;
+    overflow:visible;
+    
+    #breadcrumbs {
+      @include column($blueprint-grid-columns - 1);
+      margin-top:1em;
+      font-size:.9em;
+      
+        a {
+          color:$light_grey;
+        }
     }
+    #content {
+      @include column($blueprint-grid-columns - $blueprint-grid-columns/3);      
+      
+      h2 {
+        width:100%;
+        color:$grey;
+        margin-bottom:.5em;
+      }
+      
+      .create_item{
+        @include column($blueprint-grid-columns/4);
+        @include append(1);
+        @include last;
+        margin:.75em 0 .5em;
+        vertical-align:bottom;
+        display:none;
+      }
+      .index_table{
+        width:100%;
+        
+        table{
+          $table-color: #efefef;
+          @include alternating-rows-and-columns($table-color, white, transparent);
+          @include outer-table-borders(1px, $light-grey);
+          @include inner-table-borders(1px, $light-grey);
+          thead th {
+            border-right:none !important;
+            color:$grey;
+          }
+          tbody td {
+            border-right:none !important;
+          }
+        }  
+      }
+    }
+    #sidebar {
+      @include column($blueprint-grid-columns/4 - 1);
+      @include prepend(1);
+      @include last;
+      margin-top:1em;
+      #subnav{
+        h3 {
+          color:$grey;
+        }
+        ul {
+          padding:0 0 0 1em;
+        }
+      }
+
+     }
+  }
+  
+  #footer {
+    width:100%;
+    height:4em;
+    background: white url(/images/bg-body.png) repeat-x;
   }
 }
-
-

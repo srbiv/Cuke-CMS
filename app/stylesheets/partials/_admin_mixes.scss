@@ -1,0 +1,6 @@
+@mixin full_width() {
+  @include column($blueprint-grid-columns - 2);
+  @include prepend(1);
+  @include append(1);
+  @include last;
+}

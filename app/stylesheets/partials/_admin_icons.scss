@@ -1,0 +1,12 @@
+.icon {
+  display:inline-block;
+  padding-left:21px;
+  margin-right:6px;
+  
+  &.edit{
+    @include ss_page_edit;
+  }
+  &.delete{
+    @include ss_delete;
+  }
+}

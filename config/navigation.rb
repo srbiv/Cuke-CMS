@@ -17,6 +17,7 @@ SimpleNavigation::Configuration.run do |navigation|
     end
 
     primary.item :settings, 'Settings', '/'
+    primary.dom_class = 'top'
 
     # Add an item to the primary navigation. The following params apply:
     # key - a symbol which uniquely defines your navigation item in the scope of the primary_navigation
