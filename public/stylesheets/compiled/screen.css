@@ -1386,19 +1386,19 @@ body.admin .wrapper #main #content .index_table table th.even, body.admin .wrapp
 }
 /* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 body.admin .wrapper #main #content .index_table table tr.odd td {
-  background-color: white;
+  background-color: #efefef;
 }
 /* line 9, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 body.admin .wrapper #main #content .index_table table tr.odd td.even, body.admin .wrapper #main #content .index_table table tr.odd td:nth-child(2n) {
-  background-color: white-transparent;
+  background-color: #efefef-transparent;
 }
 /* line 12, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 body.admin .wrapper #main #content .index_table table tr.even td {
-  background-color: #efefef;
+  background-color: white;
 }
 /* line 14, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 body.admin .wrapper #main #content .index_table table tr.even td.even, body.admin .wrapper #main #content .index_table table tr.even td:nth-child(2n) {
-  background-color: #efefef-transparent;
+  background-color: white-transparent;
 }
 /* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 body.admin .wrapper #main #content .index_table table tfoot th, body.admin .wrapper #main #content .index_table table tfoot td {
@@ -1440,13 +1440,16 @@ body.admin .wrapper #main #content .index_table table tbody tr.last td, body.adm
 /* line 161, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #content .index_table table thead th {
   border-right: none !important;
-  color: #999;
+  color: #666;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #efefef), color-stop(50%, #ffffff), color-stop(100%, #efefef));
+  background-image: -moz-linear-gradient(top, #efefef 0%, #ffffff 50%, #efefef 100%);
+  background-image: linear-gradient(top, #efefef 0%, #ffffff 50%, #efefef 100%);
 }
-/* line 165, ../../../app/stylesheets/partials/_admin.scss */
+/* line 166, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #content .index_table table tbody td {
   border-right: none !important;
 }
-/* line 171, ../../../app/stylesheets/partials/_admin.scss */
+/* line 172, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #sidebar {
   display: inline;
   float: left;
@@ -1460,11 +1463,11 @@ body.admin .wrapper #main #sidebar {
 * html body.admin .wrapper #main #sidebar {
   overflow-x: hidden;
 }
-/* line 177, ../../../app/stylesheets/partials/_admin.scss */
+/* line 178, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #sidebar #subnav h3 {
   color: #666666;
 }
-/* line 180, ../../../app/stylesheets/partials/_admin.scss */
+/* line 181, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #sidebar #subnav ul {
   padding: 0 0 0 1em;
 }

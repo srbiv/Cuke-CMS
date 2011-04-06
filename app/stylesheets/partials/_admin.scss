@@ -155,12 +155,13 @@ body.admin {
 
           table{
             $table-color: #efefef;
-            @include alternating-rows-and-columns($table-color, white, transparent);
+            @include alternating-rows-and-columns(white, $table-color, transparent);
             @include outer-table-borders(1px, $grey);
             @include inner-table-borders(1px, $light-grey);
             thead th {
               border-right:none !important;
-              color:#999;
+              color:#666;
+              @include linear-gradient(color-stops(#EFEFEF, white, #EFEFEF));
             }
             tbody td {
               border-right:none !important;
