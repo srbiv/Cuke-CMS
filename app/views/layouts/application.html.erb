@@ -15,33 +15,35 @@
 
   <%= csrf_meta_tag %>
 </head>
-<body class='admin'>
-  <div class='container'>
-    <div id="header">
-      <div id="logo">
-        <h1 id="sitename">cukes CMS</h1>
-        <p id="tagline">Well behaved content management</p>
-      </div>
+<body class="admin">
+  <div class="wrapper">
+    <div class="container">
+      <div id="header">
+        <div id="logo">
+          <h1 id="sitename">cukes CMS</h1>
+          <p id="tagline">Well behaved content management</p>
+        </div>
 
-      <div id="nav">
-        <%= render_navigation :expand_all => true %>
-      </div>
-    </div>
-    <div id="main">
-      <div id="breadcrumbs">
-        <%= render_navigation :renderer => :breadcrumbs, :join_with => " &gt; " %>
-      </div>
-      <div id="content">
-        <%= yield %>
-      </div>
-      <div id="sidebar">
-        <div id="subnav">
-          <h3><%= active_navigation_item_name :level => 1 %></h3>
-          <%= render_navigation :level => 2 %>
+        <div id="nav">
+          <%= render_navigation :expand_all => true %>
         </div>
       </div>
-    </div>
-    <div id="footer">
+      <div id="main">
+        <div id="breadcrumbs">
+          <%= render_navigation :renderer => :breadcrumbs, :join_with => " &gt; " %>
+        </div>
+        <div id="content">
+          <%= yield %>
+        </div>
+        <div id="sidebar">
+          <div id="subnav">
+            <h3><%= active_navigation_item_name :level => 1 %></h3>
+            <%= render_navigation :level => 2 %>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+      </div>
     </div>
   </div>
 </body>
