@@ -544,9 +544,10 @@ label {
 /* line 11, ../../../app/stylesheets/partials/_admin.scss */
 body.admin {
   background-color: #EFEFEF;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #efefef), color-stop(50%, #ffffff), color-stop(100%, #efefef));
-  background-image: -moz-linear-gradient(top, #efefef 0%, #ffffff 50%, #efefef 100%);
-  background-image: linear-gradient(top, #efefef 0%, #ffffff 50%, #efefef 100%);
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #cccccc), color-stop(50%, #ffffff), color-stop(100%, #efefef));
+  background-image: -moz-linear-gradient(top, #cccccc 0%, #ffffff 50%, #efefef 100%);
+  background-image: linear-gradient(top, #cccccc 0%, #ffffff 50%, #efefef 100%);
   width: 100%;
 }
 /* line 46, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
@@ -1159,33 +1160,33 @@ body.admin .prepend-top {
 body.admin .append-bottom {
   margin-bottom: 1.5em;
 }
-/* line 16, ../../../app/stylesheets/partials/_admin.scss */
+/* line 17, ../../../app/stylesheets/partials/_admin.scss */
 body.admin a, body.admin a:visited {
   color: #333333;
   text-decoration: none;
 }
-/* line 21, ../../../app/stylesheets/partials/_admin.scss */
+/* line 22, ../../../app/stylesheets/partials/_admin.scss */
 body.admin a:hover {
   color: #204528;
   text-decoration: underline  !important;
 }
-/* line 25, ../../../app/stylesheets/partials/_admin.scss */
+/* line 26, ../../../app/stylesheets/partials/_admin.scss */
 body.admin a.selected {
   color: #204528;
   text-decoration: underline !important;
 }
-/* line 29, ../../../app/stylesheets/partials/_admin.scss */
+/* line 30, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper {
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
-/* line 32, ../../../app/stylesheets/partials/_admin.scss */
+/* line 33, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper .container {
   position: relative;
   overflow: visible;
 }
-/* line 37, ../../../app/stylesheets/partials/_admin.scss */
+/* line 38, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #header {
   display: inline;
   float: left;
@@ -1201,7 +1202,7 @@ body.admin .wrapper #header {
 * html body.admin .wrapper #header {
   overflow-x: hidden;
 }
-/* line 42, ../../../app/stylesheets/partials/_admin.scss */
+/* line 43, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #header #logo {
   display: inline;
   float: left;
@@ -1212,7 +1213,7 @@ body.admin .wrapper #header #logo {
 * html body.admin .wrapper #header #logo {
   overflow-x: hidden;
 }
-/* line 45, ../../../app/stylesheets/partials/_admin.scss */
+/* line 46, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #header #logo h1 {
   background: transparent url(/images/logo.png) no-repeat;
   text-indent: -99999px;
@@ -1222,11 +1223,11 @@ body.admin .wrapper #header #logo h1 {
   margin-top: 10px;
   color: #666666;
 }
-/* line 54, ../../../app/stylesheets/partials/_admin.scss */
+/* line 55, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #header #logo p {
   display: none;
 }
-/* line 59, ../../../app/stylesheets/partials/_admin.scss */
+/* line 60, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #header #nav {
   display: inline;
   float: left;
@@ -1240,12 +1241,12 @@ body.admin .wrapper #header #nav {
 * html body.admin .wrapper #header #nav {
   overflow-x: hidden;
 }
-/* line 65, ../../../app/stylesheets/partials/_admin.scss */
+/* line 66, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #header #nav li {
   display: inline-block;
   margin: 1.5em 1.5em 0;
 }
-/* line 69, ../../../app/stylesheets/partials/_admin.scss */
+/* line 70, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #header #nav li a {
   border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1255,8 +1256,9 @@ body.admin .wrapper #header #nav li a {
   border-width: 1px;
   border-style: solid;
   border-color: transparent;
+  color: #204528;
 }
-/* line 79, ../../../app/stylesheets/partials/_admin.scss */
+/* line 81, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #header #nav li a.selected,
 body.admin .wrapper #header #nav li a.hover,
 body.admin .wrapper #header #nav li a:hover {
@@ -1266,8 +1268,9 @@ body.admin .wrapper #header #nav li a:hover {
   border-color: #CCCCCC #EEEEEE #EEEEEE #CCCCCC;
   border-style: solid;
   border-width: 1px;
+  color: black;
 }
-/* line 87, ../../../app/stylesheets/partials/_admin.scss */
+/* line 90, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #header #nav li ul {
   display: none;
   position: absolute;
@@ -1275,25 +1278,25 @@ body.admin .wrapper #header #nav li ul {
   left: 0;
   width: 100%;
 }
-/* line 95, ../../../app/stylesheets/partials/_admin.scss */
+/* line 98, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #header #nav li ul li a {
   font-size: .9em;
   padding: 0;
   background-color: transparent;
   color: #204528;
 }
-/* line 102, ../../../app/stylesheets/partials/_admin.scss */
+/* line 105, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #header #nav li ul li a.hover,
 body.admin .wrapper #header #nav li ul li a:hover {
   text-decoration: none !important;
   background-color: transparent;
   padding: 0;
 }
-/* line 113, ../../../app/stylesheets/partials/_admin.scss */
+/* line 116, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #header.long {
   height: 7em;
 }
-/* line 118, ../../../app/stylesheets/partials/_admin.scss */
+/* line 121, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main {
   display: inline;
   float: left;
@@ -1318,7 +1321,7 @@ body.admin .wrapper #main {
 * html body.admin .wrapper #main {
   overflow-x: hidden;
 }
-/* line 127, ../../../app/stylesheets/partials/_admin.scss */
+/* line 130, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #breadcrumbs {
   display: inline;
   float: left;
@@ -1331,11 +1334,15 @@ body.admin .wrapper #main #breadcrumbs {
 * html body.admin .wrapper #main #breadcrumbs {
   overflow-x: hidden;
 }
-/* line 132, ../../../app/stylesheets/partials/_admin.scss */
+/* line 135, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #breadcrumbs a {
   color: #cccccc;
 }
-/* line 136, ../../../app/stylesheets/partials/_admin.scss */
+/* line 138, ../../../app/stylesheets/partials/_admin.scss */
+body.admin .wrapper #main #breadcrumbs a:hover {
+  color: #666666;
+}
+/* line 142, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #content {
   display: inline;
   float: left;
@@ -1346,13 +1353,13 @@ body.admin .wrapper #main #content {
 * html body.admin .wrapper #main #content {
   overflow-x: hidden;
 }
-/* line 139, ../../../app/stylesheets/partials/_admin.scss */
+/* line 145, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #content h2 {
   width: 100%;
   color: #666666;
   margin-bottom: .5em;
 }
-/* line 145, ../../../app/stylesheets/partials/_admin.scss */
+/* line 151, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #content .create_item {
   display: inline;
   float: left;
@@ -1368,13 +1375,13 @@ body.admin .wrapper #main #content .create_item {
 * html body.admin .wrapper #main #content .create_item {
   overflow-x: hidden;
 }
-/* line 153, ../../../app/stylesheets/partials/_admin.scss */
+/* line 159, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #content .index_table {
   width: 100%;
 }
-/* line 156, ../../../app/stylesheets/partials/_admin.scss */
+/* line 162, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #content .index_table table {
-  border: 1px solid #666666;
+  border: 1px solid #cccccc;
 }
 /* line 2, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 body.admin .wrapper #main #content .index_table table th {
@@ -1386,11 +1393,11 @@ body.admin .wrapper #main #content .index_table table th.even, body.admin .wrapp
 }
 /* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 body.admin .wrapper #main #content .index_table table tr.odd td {
-  background-color: #efefef;
+  background-color: #cbe2c3;
 }
 /* line 9, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 body.admin .wrapper #main #content .index_table table tr.odd td.even, body.admin .wrapper #main #content .index_table table tr.odd td:nth-child(2n) {
-  background-color: #efefef-transparent;
+  background-color: #cbe2c3-transparent;
 }
 /* line 12, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
 body.admin .wrapper #main #content .index_table table tr.even td {
@@ -1410,15 +1417,15 @@ body.admin .wrapper #main #content .index_table table tfoot th.even, body.admin 
 }
 /* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
 body.admin .wrapper #main #content .index_table table thead th {
-  border-bottom: 1px solid #666666;
+  border-bottom: 1px solid #cccccc;
 }
 /* line 7, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
 body.admin .wrapper #main #content .index_table table tfoot th, body.admin .wrapper #main #content .index_table table tfoot td {
-  border-top: 1px solid #666666;
+  border-top: 1px solid #cccccc;
 }
 /* line 10, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
 body.admin .wrapper #main #content .index_table table th:first-child {
-  border-right: 1px solid #666666;
+  border-right: 1px solid #cccccc;
 }
 /* line 14, ../../../../../.rvm/gems/ruby-1.9.2-p136@cuke-cms/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/tables/_borders.scss */
 body.admin .wrapper #main #content .index_table table th, body.admin .wrapper #main #content .index_table table td {
@@ -1437,7 +1444,7 @@ body.admin .wrapper #main #content .index_table table tbody tr.last th,
 body.admin .wrapper #main #content .index_table table tbody tr.last td, body.admin .wrapper #main #content .index_table table tfoot tr:last-child th, body.admin .wrapper #main #content .index_table table tfoot tr:last-child td, body.admin .wrapper #main #content .index_table table tfoot tr.last th, body.admin .wrapper #main #content .index_table table tfoot tr.last td {
   border-bottom-width: 0px;
 }
-/* line 161, ../../../app/stylesheets/partials/_admin.scss */
+/* line 167, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #content .index_table table thead th {
   border-right: none !important;
   color: #666;
@@ -1445,11 +1452,11 @@ body.admin .wrapper #main #content .index_table table thead th {
   background-image: -moz-linear-gradient(top, #efefef 0%, #ffffff 50%, #efefef 100%);
   background-image: linear-gradient(top, #efefef 0%, #ffffff 50%, #efefef 100%);
 }
-/* line 166, ../../../app/stylesheets/partials/_admin.scss */
+/* line 172, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #content .index_table table tbody td {
   border-right: none !important;
 }
-/* line 172, ../../../app/stylesheets/partials/_admin.scss */
+/* line 178, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #sidebar {
   display: inline;
   float: left;
@@ -1463,11 +1470,11 @@ body.admin .wrapper #main #sidebar {
 * html body.admin .wrapper #main #sidebar {
   overflow-x: hidden;
 }
-/* line 178, ../../../app/stylesheets/partials/_admin.scss */
+/* line 184, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #sidebar #subnav h3 {
   color: #666666;
 }
-/* line 181, ../../../app/stylesheets/partials/_admin.scss */
+/* line 187, ../../../app/stylesheets/partials/_admin.scss */
 body.admin .wrapper #main #sidebar #subnav ul {
   padding: 0 0 0 1em;
 }
